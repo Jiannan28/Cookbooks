@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="../src/flowChord.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+    #flow .flows {
+      opacity: .6;
+    }
+    #flow .chord-hover {
+      position: absolute;
+      visibility: hidden;
+      background: #EEE;
+      padding: 15px 25px 25px 15px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    </style>
+  <div id="flow">
+  </div>
+
+  <script>
+  var colors = d3.scale.ordinal().range(["#AAA", "steelblue", "green", "orange", "brown"]);
+  var hoverHtml = {'Introvert': '<h1>Introverts</h1>Like to be by themselves', 
+      'Extrovert': '<h1>Extroverts</h1>Like the company of other people', 
+      'Optimist': '<h1>Optimists</h1>Look on the bright side of life',
+      'Neutral': '<h1>Neutrals</h1>Life could be good, it could be bad',
+      'Pessimist': '<h1>Pessimists</h1>See the glass half empty'}
+  var chordDiagram = d3.elts.flowChord().colors(colors).hoverHtml(hoverHtml).rimWidth(30);
+  var data = [['Disposition','Optimist','Neutral','Pessimist'],['Introvert', 0.8, 0.4, 0.67], ['Extrovert', 0.2, 0.6, 0.33]]
+  d3.select("#flow").datum(data).call(chordDiagram);
+
+  </script>
+
+</body>

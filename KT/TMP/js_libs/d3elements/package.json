@@ -1,0 +1,25 @@
+{
+    "name" : "d3elements",
+    "title" : "D3 Elements",
+    "description": "Reusable D3 elements, including bar and timeseries charts",
+    "version" : "0.1.2",
+    "homepage": "https://bitbucket.org/artstr/d3elements.git",
+    "author": "Artana Pty Ltd",
+    "license": {
+        "type": "MIT",
+        "url": "https://bitbucket.org/artstr/d3elements/src/master/LICENSE"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/artstr/d3elements.git"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-concat": "~0.4.0",
+        "grunt-contrib-cssmin": "~0.10.0",
+        "grunt-contrib-less": "~0.11.3",
+        "grunt-contrib-uglify": "~0.5.0",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-watch": "~0.6.1"
+    }
+}

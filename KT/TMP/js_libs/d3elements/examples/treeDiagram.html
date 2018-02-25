@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	svg {
+		margin: 20px;
+		border: 2px solid gray;
+	}
+	</style>
+	<body>
+		<div>
+			<svg width="300" height="300">
+				<g id="tree" transform="translate(150,0)scale(120,120)"></g>
+			</svg>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+		<script src="../src/treeDiagram.js"></script>
+		<script>
+
+			var treeData = {name: 'Daddy', 
+						children: [{name: 'Poodle', 
+							 children: [
+							 	{name: 'Labradoodle'},
+							 	{name: 'Cavoodle'},
+							 	{name: 'Spoodle'},
+							 ]
+							},
+							{name: 'Greyhound', 
+							 children: [
+							 	{name: 'Whippet'},
+							 	{name: 'Huskie'},
+							 ]
+							},
+							{name: 'Sheltie'},
+							{name: 'Bulldog'},
+							]
+						};
+
+			var myTree = d3.elts.treeDiagram();
+			d3.select("#tree").datum(treeData).call(myTree);
+
+		</script>
+	</body>
+</html>
+
+
+

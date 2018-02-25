@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block style %}
+#record-table thead {
+  background-color: #5cb268;
+}
+img { 
+    width:90%; 
+}
+.feat_img_container{
+	float: left;
+}
+.feat_tab_container{
+	float: left;
+}
+.clearfix{
+	clear:both
+}
+{% endblock %}
+
+{% block leftInfo %}
+<h2>Model Performance</h2>
+<p>{{ num_lead }} <b>Records</b></p>
+<p>{{ num_alert }} <b>Selected@{{ alert_threshold*100 }}%</b></p>
+<!-- <p>{{ num_alert_invest }} Investigated&nbsp;&nbsp;{{ num_alert_sys }} System warning</p> -->
+<p>{{ num_pos }} <b>Real Target</b></p>
+<!-- <p>{{ num_fraud_invest }} Investigated&nbsp;&nbsp;{{ num_fraud_sys }} System warning</p> -->
+
+
+<p><b>Precision@{{ alert_threshold*100 }}%</b>: {{ precision_score }}</p>
+<p><b>Recall@{{ alert_threshold*100 }}%</b>: {{ recall_score }}</p>
+<p><b>ROC AUC</b>: {{ roc_score }}</p>
+<p><b>Lift @ 10</b>: {{ lift }}</p>
+<p><b>AVG Precision Score</b>: {{ avg_pre_score }}</p>
+<p><b>Accuracy Score</b>: {{ acc_score }}</p>
+<h3>Cross Validation Panel</h3>
+<img src="{{ img_path }}", alt="CrossValidation Panel", align='left'>
+{% endblock %}
+
+{% block rightInfo %}
+<h2>Results Interpretation</h2>
+<h3>ELI5 For Each Record</h3>
+{{ record_alert_table | safe }}
+
+<h3>Top20 Feature Importance</h3>
+
+<div class='feat_img_container'> 
+	<img src="{{ feat_imp }}", alt="FeatureImportance Panel", style="width:512px;height:512px;">
+</div>
+<div class='feat_tab_container'>
+	{{ feat_table | safe }}
+</div>
+<div class="clearfix"></div>
+
+
+{% endblock %}
+
+{% block JS %}
+<script type="text/javascript">
+$('#record-table').dynatable({
+  features: {
+    //paginate: true,
+    //recordCount: true,
+    sorting: true,
+	search: true
+  }
+});
+
+$('#feat-table').dynatable({
+  features: {
+    //paginate: true,
+    //recordCount: true,
+    sorting: true,
+	search: true
+  }
+});
+</script>
+{% endblock %}

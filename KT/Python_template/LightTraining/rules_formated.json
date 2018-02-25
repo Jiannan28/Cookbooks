@@ -1,0 +1,211 @@
+{
+  "name": "Sex_male > 0.5",
+  "children": [
+    {
+      "name": "Pclass > 1.5",
+      "children": [
+        {
+          "name": "Age_group_child > 0.5",
+          "children": [
+            {
+              "name": "SibSp > 2.5",
+              "children": [
+                {
+                  "name": "Parch > 1.5",
+                  "children": [
+                    {
+                      "name": "7 of S, 1 of u"
+                    },
+                    {
+                      "name": "6 of S, 0 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "0 of S, 11 of u"
+                }
+              ]
+            },
+            {
+              "name": "SibSp > 0.5",
+              "children": [
+                {
+                  "name": "Embarked_C > 0.5",
+                  "children": [
+                    {
+                      "name": "6 of S, 1 of u"
+                    },
+                    {
+                      "name": "35 of S, 0 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "Embarked_Q > 0.5",
+                  "children": [
+                    {
+                      "name": "17 of S, 1 of u"
+                    },
+                    {
+                      "name": "130 of S, 16 of u"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Age_group_adult > 0.5",
+          "children": [
+            {
+              "name": "Embarked_S > 0.5",
+              "children": [
+                {
+                  "name": "SibSp > 0.5",
+                  "children": [
+                    {
+                      "name": "6 of S, 2 of u"
+                    },
+                    {
+                      "name": "10 of S, 8 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "Parch > 0.5",
+                  "children": [
+                    {
+                      "name": "2 of S, 1 of u"
+                    },
+                    {
+                      "name": "3 of S, 7 of u"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "SibSp > 0.5",
+              "children": [
+                {
+                  "name": "0 of S, 1 of u"
+                },
+                {
+                  "name": "Embarked_C > 0.5",
+                  "children": [
+                    {
+                      "name": "6 of S, 0 of u"
+                    },
+                    {
+                      "name": "8 of S, 4 of u"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pclass > 2.5",
+      "children": [
+        {
+          "name": "Embarked_S > 0.5",
+          "children": [
+            {
+              "name": "SibSp > 0.5",
+              "children": [
+                {
+                  "name": "SibSp > 3.5",
+                  "children": [
+                    {
+                      "name": "2 of S, 2 of u"
+                    },
+                    {
+                      "name": "19 of S, 2 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "Age_group_adult > 0.5",
+                  "children": [
+                    {
+                      "name": "6 of S, 6 of u"
+                    },
+                    {
+                      "name": "5 of S, 1 of u"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age_group_adult > 0.5",
+              "children": [
+                {
+                  "name": "Embarked_C > 0.5",
+                  "children": [
+                    {
+                      "name": "1 of S, 3 of u"
+                    },
+                    {
+                      "name": "2 of S, 0 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "Parch > 1.5",
+                  "children": [
+                    {
+                      "name": "1 of S, 0 of u"
+                    },
+                    {
+                      "name": "4 of S, 12 of u"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Embarked_S > 0.5",
+          "children": [
+            {
+              "name": "SibSp > 0.5",
+              "children": [
+                {
+                  "name": "SibSp > 1.5",
+                  "children": [
+                    {
+                      "name": "0 of S, 4 of u"
+                    },
+                    {
+                      "name": "4 of S, 18 of u"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pclass > 1.5",
+                  "children": [
+                    {
+                      "name": "2 of S, 21 of u"
+                    },
+                    {
+                      "name": "0 of S, 12 of u"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "0 of S, 30 of u"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

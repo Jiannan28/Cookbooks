@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Visualization for Singapore</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .thumb {
+        border: 2px solid #333;
+        margin-right: 15px;
+        margin-bottom: 25px;
+        width: calc( (100% - 45px) / 4 );
+        height: 200px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        padding-top: 120px;
+    }
+
+    .thumb:hover {
+        background-size: 120%;
+        border: 3.5px solid #1768AC;
+    }
+
+    footer {
+        margin: 50px 0;
+        color: #1768AC;
+    }
+
+    .topic {
+        font-size: 15px;
+        color: #1768AC;
+        font-weight: 500;
+    }
+
+    .topic:link, .topic:visited, .topic:hover, .topic:active {
+        text-decoration: none;
+    }
+
+    .topic:hover {
+         color: #FF666B;
+    }
+
+    .des {
+        font-size: 12px;
+        color: #000;
+    }
+
+    #header {
+		font : Arial;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+        <p id='header'>Data Visualization Lib</p>
+
+        <div id='thumbs'>
+			
+				<div class='col-sm-3 thumb' style="background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url('blog1.png');">
+					<a class='topic' href="http://localhost:8000/personal_income_viz.html" target='_blank'>Personal Income Level</a>
+					<p class='des'>How personal Income distributes on map</p>
+				</div>
+				<div class='col-sm-3 thumb' style="background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url('blog2.png');">
+					<a class='topic' href="http://localhost:8000/MULTI.html" target='_blank'>Multi distributions</a>
+					<p class='des'>How different attributes distribute on map</p>
+				</div>
+				<div class='col-sm-3 thumb' style="background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url('blog3.png');">
+					<a class='topic' href="http://localhost:8000/HDB_unit_heatmap.html" target='_blank'>HDB Units HeatMap</a>
+					<p class='des'>How HDB Units distributes on map with heatmap</p>
+				</div>
+				
+			
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Test Demo</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+</body>
+
+</html>

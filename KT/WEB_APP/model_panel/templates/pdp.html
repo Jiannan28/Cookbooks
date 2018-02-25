@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block style %}
+input.MyButton {
+
+font-size: 10px;
+}
+
+.pdp_plot { 
+    width:760px;
+	height:512px;
+}
+
+.act_plot { 
+    width:612px;
+	height:512px;
+}
+
+{% endblock %}
+
+{% block leftInfo %}
+<h3>Actual prediction plot</h3>
+{{img_act_html | safe}}
+<form>
+<input class="MyButton" type="button" value="Back to Home" onclick="window.location.href='/home'" />
+</form>
+{% endblock %}
+
+{% block rightInfo %}
+<h3>Partial dependent plot for {{feature_name}}</h3>
+{{img_html | safe}}
+{% endblock %}

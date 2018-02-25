@@ -1,0 +1,156 @@
+<!-- HTML File creating the web page for interactive visualisation 
+Add submenu html tags -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RDU Navigation</title>
+
+    <!-- We use google fonts for many of the examples, but they are not necessary -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Raleway:600,400,200' rel='stylesheet' type='text/css'>
+
+    <!-- Test container style sheets -->
+    <link rel="stylesheet" href="styles/examples.css">
+
+    <!-- Vizuly specific style sheets -->
+    <link rel="stylesheet" href="../lib/styles/vizuly.css">
+    <link rel="stylesheet" href="../lib/styles/vizuly_weightedtree.css">
+
+    <!-- Supporting test container files:  Vizuly does NOT rely on these -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/styles/cssmenu.css">
+    <script type="text/javascript" src="../lib/jquery-2.1.1.min.js"></script>
+    <script src="../lib/cssmenu.js"></script>
+
+    <!-- D3.js ... of course! -->
+    <script src="lib/d3.min.js"></script>
+	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+
+
+    <script src="lib/vizuly_core.min.js"></script>
+	<script src="lib/vizuly_weightedtree.min.js"></script>
+
+    <script src="weightedtree_rdu.js"></script>
+
+</head>
+
+<body>
+
+<div id='cssmenu'>
+    <ul class="main-menu">
+        <li class='active'>
+            <a><span>Display</span><br><span class="setting"></span></a>
+            <ul class="options" callback="changeSize">
+                <li id="currentDisplay" class="selected"><a></a></li>
+                <li item_value="1000,1000"><a>1000px - 1000px</a></li>
+                <li item_value="800,600"><a>800px - 600px</a></li>
+                <li item_value="375,667"><a>375px - 667px</a></li>
+                <li item_value="320,568"><a>320px - 568px</a></li>
+            </ul>
+        </li>
+        <li class='active'><a><span>Theme</span><br><span class="setting"></span></a>
+            <ul class="options" callback="changeSkin">
+                <li item_value="None"><a>None</a></li>
+                <li item_value="Axiis" class="selected"><a>Axiis</a></li>
+            </ul>
+        </li>
+        <li class='active'><a><span class="label">USECASE</span><br><span class="setting"></span></a>
+          <ul class="options" callback="changeData">
+                <li item_value="0" class="selected"><a>All</a>
+				<ul class="options" callback="changeData">
+						<li item_value="15"><a>High</a></li>
+						<li item_value="16"><a>Medium</a></li>
+						<li item_value="17"><a>Low</a></li>
+					</ul>
+				</li>	
+                <li item_value="1"><a>GROW_INFLOW</a>
+				<ul class="options" callback="changeData">
+						<li item_value="4"><a>Leads prioritization(UC1)</a></li>
+						<li item_value="5"><a>Cross-sell(UC7)</a></li>
+						<li item_value="6"><a>Retention(UC9)</a></li>
+						<li item_value="7"><a>Channel_Management(UC24)</a></li>
+					</ul>
+				</li>
+                <li item_value="2"><a>REDUCE_CLAIM_LOSSES</a>
+				<ul class="options" callback="changeData">
+						<li item_value="8"><a>Claims_payout_management(UC14)</a></li>
+						<li item_value="9"><a>Risk_portfolio_optimization(UC29)</a></li>
+						<li item_value="10"><a>Subrogation_recovery_management(UC32)</a></li>
+						<li item_value="11"><a>Fraud_Detection(UC18)</a></li>
+					</ul>
+				</li>
+				<li item_value="3"><a>REDUCE_EXPENSES</a>
+				<ul class="options" callback="changeData">
+						<li item_value="12"><a>Claims_process_optimization(UC34)</a></li>
+						<li item_value="13"><a>Underwriting_process_optimization(UC37)</a></li>
+						<li item_value="14"><a>Sales_process_optimization(UC39)</a></li>
+					</ul>
+				</li>					
+           </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- Our main content container-->
+<div class="container" style="width:100%">
+    <div id="viz_container" class="z-depth-3">
+    </div>
+    <div style="margin-left:0px; height:0px; width:90%; margin:0px auto; margin-top:20px; font-family:Raleway; font-size:10px;">
+        RDU Interactive Navigation. Ageas Data Analytics All rights reserved.
+    </div>
+</div>
+
+
+
+
+<script>
+    //Once the document is ready we set javascript and page settings
+    var screenWidth;
+    var screenHeight;
+
+    $(document).ready(function () {
+
+        var rect;
+        if (self==top) {
+            rect = document.body.getBoundingClientRect();
+        }
+        else {
+            rect =  parent.document.body.getBoundingClientRect();
+        }
+
+        //Set display size based on window size.
+        screenWidth = (rect.width < 960) ? Math.round(rect.width*.95) : Math.round((rect.width - 210) *.95);
+
+        screenHeight=750;
+
+        d3.select("#currentDisplay")
+                .attr("item_value", (String(screenWidth) + "," + String(screenHeight)))
+                .attr("class", "selected")
+                .html("<a>" + screenWidth + "px - " + screenHeight + "px</a>");
+
+
+        $("#cssmenu").menumaker({
+            title: "RDU Interactive Navigation",
+            format: "multitoggle"
+        });
+
+        // Set the size of our container element.
+        viz_container = d3.selectAll("#viz_container")
+                .style("width", screenWidth + "px")
+                .style("height", screenHeight + "px");
+
+
+        loadData();
+
+
+    });
+
+</script>
+
+
+</body>
+
+
+</html>

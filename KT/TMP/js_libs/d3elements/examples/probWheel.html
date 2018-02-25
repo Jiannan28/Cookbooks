@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="../src/probWheel.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    #wheel {
+      position: absolute;
+    }
+    #value {
+      font-size: 40px;
+      color: gray;
+      position: absolute;
+      top: 95px;
+      left: 50px;
+      width: 150px;
+      text-align: center;
+    }
+    </style>
+  <div id="wheel">
+  </div>
+  <div id="value"></div>
+
+  <script>
+    function showValue(f) {
+      document.getElementById('value').innerHTML = d3.format("%.1")(f);
+    }
+    var wheel = d3.elts.probWheel().onChange(showValue);
+    d3.select("#wheel").datum([0.5]).call(wheel);
+  </script>
+
+</body>

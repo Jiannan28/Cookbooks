@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	#detail {
+		font-family: sans-serif;
+		margin: 20px;
+		border: 2px solid gray;
+		width: 300px;
+		height: 300px;
+	}
+	.y.axis text {
+		fill: #888;
+	}
+	.btn { 
+		font-family: sans-serif;
+		margin: 33px 0 0 136px;
+		padding: 9px 12px;
+		border: 1px solid gray;
+		text-decoration: none;
+		color: black;
+		background: #CCC;
+	}
+	a.btn:hover { 
+		text-decoration: none;
+		color: black;
+		background: #BBB;
+	}
+	</style>
+	<body>
+		<div id="detail">
+		</div>
+		<a href="#" class="btn" onclick="redraw()">Next &raquo;</a>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script src="../src/barChart.js"></script>
+		<script>
+			var elt = d3.select("#detail");
+			var width = 300, 
+				height = 300;
+			var dogs = ['Beagle','Terrier','Poodle','Greyhound','Spaniel','Labrador','Boxer','Sheltie','Bulldog'];
+
+			redraw = function() {
+				var points = [];
+				dogs.forEach(function(dog) {
+					if (Math.random()>.25) {
+						points.push([dog, Math.random()*100-40]);
+					}
+				});
+				points = points.sort();
+				//console.log(points);  // e.g. [['Beagle',15.5], ['Poodle', -33.1], ...]
+				var myChart = d3.elts.barChart()
+										.width(width)
+										.height(height)
+										.yMin(-40)
+										.yMax(60)
+										.margin({top: 20, right: 20, bottom: 20, left: 40});
+				elt.datum(points).call(myChart);
+			}
+
+			redraw();
+
+		</script>
+	</body>
+</html>
+
+
+

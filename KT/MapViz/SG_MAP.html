@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+body {
+  font-family: arial;
+  color: #555;
+}
+
+.background {
+  fill: #fff;
+  pointer-events: all;
+}
+
+.map-layer {
+  fill: #fff;
+  stroke: #ccc;
+}
+
+#title {
+  font-size: 1.5vw;
+}
+
+.container {
+  margin-top: 1.5vh;
+}
+
+.select-title {
+  font-size: 0.6vw;
+  color: #01579B;
+}
+
+.info-title {
+  font-size: 1.3vw;
+  font: bold;
+}
+
+.info-content {
+  font-size: 0.7vw;
+}
+
+.info-content span {
+  color: #01579B;
+}
+
+#info-display {
+  margin-top: 2vh;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class='container'>
+
+<!--title-->
+<div id='title'>
+  <p>Singapore External Data Map</p>
+</div>
+
+<!--selections-->
+<div class='row'>
+<div class='col-sm-4' id='rate'>
+<p class='select-title'>Information</p>
+<select id='rate-select'>
+  <option value='Area'>Area</option>
+  <option value='log_pop'>Log Residents</option>
+  <option value='Population'>Number Residents</option>
+  <option value='Density'>Residents Density</option>
+  
+  <option value='price_psqm_mean_hdb'>Price HDB</option>
+  <option value='price_psqm_mean_condo'>Price Condo</option>
+  <option value='HDB_rate'>HDB Ratio</option>
+  <option value='condo_rate'>Condo Ratio</option>
+  
+  <option value='Owner_rate'>Owner of Residence</option>
+  <option value='tenant_rate'>Tenant of Residence</option>
+  
+  <option value='female_male_ratio'>Gender Ratio</option>
+  <option value='rate_65'>Age 65 Ratio</option>
+  <option value='15-rate'>Age 15 Ratio</option>
+  <option value='25-55rate'>Age 25-55 Ratio</option>
+  
+  <option value='Single_rate'>Single Rate</option>
+  <option value='Married_rate'>Married Rate</option>
+  
+  <option value='Chinese_rate'>Chinese Rate</option>
+  <option value='Malai_rate'>Malai Rate</option>
+  <option value='Indian_rate'>Indian Rate</option>
+  <option value='Other_ethnic_rate'>Other Ethnic Group Rate</option>
+  
+  <option value='University_rate'>University rate</option>
+  <option value='Secondary_rate'>Secondary rate</option>
+  <option value='No_Qualification_rate'>No_Qualification_rate</option>
+  
+  <option value='Christinaity_rate'>Christinaity rate</option>
+  <option value='Buddhism_rate'>Buddhism rate</option>
+  <option value='Islam_rate'>Islam_rate</option>
+  
+  <option value='Below_1000_rate'>Individual Low Income</option>
+  <option value='1000-10000_rate'>Individual Med Income</option>
+  <option value='Above_10000_rate'>Individual High Income</option>
+  
+  <option value='Econo_Active_Rate'>Individual Economy Status</option>
+    
+  <option value='Manufacture_rate'>Working Industry Manufacture_rate</option>
+  <option value='Construction_rate'>Working Industry Construction_rate</option>
+  <option value='Services_rate'>Working Industry Services_rate</option>
+  
+  <option value='Manager_rate'>Gold-collar rate</option>
+  <option value='white_collar_rate_2'>White-collar rate</option>
+  <option value='blue_collar_rate'>Blue-collar rate</option>
+  
+  <option value='public_trans'>Public Transport to Work</option>
+  <option value='private_trans'>Private Transport to Work</option>
+  <option value='no_trans_need'>No transport required to Work</option>
+  
+  <option value='trans_work_less_15m_rate'>Work Transport Time -15m</option>
+  <option value='trans_work_more_60m_rate'>work Transport Time +60m</option>
+  <option value='trans_btw_15_60m_rate'>work Transport Time 15-60m</option>
+  
+  <option value='trans_sch_less_15m_rate'>School Transport Time -15m</option>
+  <option value='trans_sch_more_60m_rate'>School Transport Time +60m</option>
+  <option value='trans_sch_btw_15_60m_rate'>School Transport Time 15-60m</option>
+  
+  <option value='no_fam_nucleus'>No Nucleus Family</option>
+  <option value='two_fam_nucleus'>2+ Nucleus Family</option>
+  <option value='one_nuc_one_gen'>1 Nucleus 1 generation Family</option>
+  <option value='one_nuc_two_gen'>1 Nucleus 2+ generation Family</option>
+	
+  <option value='no_working_rate'>HouseHold No Working</option>
+  <option value='below_5000'>HouseHold Income 5000-</option>
+  <option value='20000_over'>Household Income 20000+</option>
+  <option value='below_8000'>HouseHold Income Below SG Median</option>
+  <option value='above_8000'>HouseHold Income Above SG Median</option>
+    
+</select>
+</div>
+</div>
+
+<div class='row' id='info-display'>
+  <p class='info-title col-sm-12'><span id='info-Name'></span></p>
+
+  <p class='info-content col-sm-3'>Zones Area (km2): <b><span id='info-Area'></span></p></b>
+  <p class='info-content col-sm-3'>Log Number of Residents: <b><span id='info-log_pop'></span></p></b>
+  <p class='info-content col-sm-3'>Number Residents: <b><span id='info-Population'></span></p></b>
+  <p class='info-content col-sm-3'>Residents Density: <b><span id='info-Density'></span></p></b>
+  
+  <p class='info-content col-sm-3'>HDB Price (SGD) PSQM: <b><span id='info-price_psqm_mean_hdb'></span></p></b>
+  <p class='info-content col-sm-3'>Condo Price (SGD) PSQM SGD: <b><span id='info-price_psqm_mean_condo'></span></p></b> 
+  <p class='info-content col-sm-3'>HDB in Dwelling Ratio: <b><span id='info-HDB_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Condo in Dwelling Ratio: <b><span id='info-condo_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Owner of Residence Ratio: <b><span id='info-Owner_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Tenant of Residence Ratio: <b><span id='info-tenant_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Gender ratio (F/M): <b><span id='info-female_male_ratio'></span></p></b>
+  <p class='info-content col-sm-3'>AGE 65+ Ratio: <b><span id='info-rate_65'></span></p></b>
+  <p class='info-content col-sm-3'>AGE 15- Ratio: <b><span id='info-15-rate'></span></p></b>
+  <p class='info-content col-sm-3'>AGE 25-55 Ratio: <b><span id='info-25-55rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Single Ratio: <b><span id='info-Single_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Married Ratio: <b><span id='info-Married_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Chinese Rate: <b><span id='info-Chinese_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Malai Rate: <b><span id='info-Malai_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Indian Rate: <b><span id='info-Indian_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Other Ethnic Group Rate: <b><span id='info-Other_ethnic_rate'></span></p></b>
+
+  <p class='info-content col-sm-3'>Education University: <b><span id='info-University_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Education Secondary or plus: <b><span id='info-Secondary_rate'></span></p></b>
+  <p class='info-content col-sm-3'>No Education Qualification: <b><span id='info-No_Qualification_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Religion Christinaity: <b><span id='info-Christinaity_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Religion Buddhism: <b><span id='info-Buddhism_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Religion Islam: <b><span id='info-Islam_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Individual Low Income: <b><span id='info-Below_1000_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Individual Med Income: <b><span id='info-1000-10000_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Individual High Income: <b><span id='info-Above_10000_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Individual Economy Active Status: <b><span id='info-Econo_Active_Rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Working in Manufacture: <b><span id='info-Manufacture_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Working in Construction: <b><span id='info-Construction_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Working in Services: <b><span id='info-Services_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Gold-collar: <b><span id='info-Manager_rate'></span></p></b>
+  <p class='info-content col-sm-3'>White-collar: <b><span id='info-white_collar_rate_2'></span></p></b>
+  <p class='info-content col-sm-3'>Blue-collar: <b><span id='info-blue_collar_rate'></span></p></b>
+    
+  <p class='info-content col-sm-3'>Public Transport to Work: <b><span id='info-public_trans'></span></p></b>
+  <p class='info-content col-sm-3'>Private Transport to Work: <b><span id='info-private_trans'></span></p></b>
+  <p class='info-content col-sm-3'>No transport required to Work: <b><span id='info-no_trans_need'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Transport time to work -15m: <b><span id='info-trans_work_less_15m_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Transport time to work 60+m: <b><span id='info-trans_work_more_60m_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Transport time to work 15-60m: <b><span id='info-trans_btw_15_60m_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>Transport time to school -15m: <b><span id='info-trans_sch_less_15m_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Transport time to school 60+m: <b><span id='info-trans_sch_more_60m_rate'></span></p></b>
+  <p class='info-content col-sm-3'>Transport time to school 15-60m: <b><span id='info-trans_sch_btw_15_60m_rate'></span></p></b>
+  
+  <p class='info-content col-sm-3'>No Nucleus Family: <b><span id='info-no_fam_nucleus'></span></p></b>
+  <p class='info-content col-sm-3'>2+ Nucleus Family: <b><span id='info-two_fam_nucleus'></span></p></b>
+  <p class='info-content col-sm-3'>1 Nucleus 1 generation Family: <b><span id='info-one_nuc_one_gen'></span></p></b>
+  <p class='info-content col-sm-3'>1 Nucleus 2+ generation Family: <b><span id='info-one_nuc_two_gen'></span></p></b>
+  
+  <p class='info-content col-sm-3'>HouseHold No Working: <b><span id='info-no_working_rate'></span></p></b>
+  <p class='info-content col-sm-3'>HouseHold Income 5000-: <b><span id='info-below_5000'></span></p></b>
+  <p class='info-content col-sm-3'>Household Income 20000+: <b><span id='info-20000_over'></span></p></b>
+  <p class='info-content col-sm-3'>HouseHold Income Below SG Median: <b><span id='info-below_8000'></span></p></b>
+  <p class='info-content col-sm-3'>HouseHold Income Above SG Median: <b><span id='info-above_8000'></span></p></b>
+  
+</div>
+
+</div>
+
+<div class='row' id='map'>
+</div>
+
+<script src='https://d3js.org/d3.v3.min.js'></script>
+<script>
+
+// Speficy input file 
+var input_file = 'sg_geo.json'
+
+// set the width and height for the map
+var width = 1000;
+var height = 800;
+
+// flag to indicate whether there is a centered province
+var centered = null;
+
+// variables for map features and other information
+//var features, all_infos;
+var features;
+// define the selection
+
+var output = 'Area';
+var name = 'HOUGANG';
+
+
+// define the color scale
+var color = d3.scale.linear()
+    .domain([5, 500])
+    .clamp(true)
+    .range(['white', '#043D69']); //'#01579B'
+
+// projection for the map
+var projection = d3.geo.mercator()
+    .center([103.85, 1.19]) //103.85
+    .scale(80000)
+    .translate([width / 2, height / 2]);//width/5, -180
+
+
+var path = d3.geo.path()
+    .projection(projection);
+
+// append the svg
+var svg = d3.select('#map') //
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+// append the grey background
+svg.append('rect')
+  .attr('class', 'background')
+  .attr('width', width)
+  .attr('height', height);
+
+// append the selection bar
+
+var g = svg.append('g');
+
+// the map layer
+var mapLayer = g.append('g').classed('map-layer', true);
+
+// load the json file indonesia_info_new.json
+d3.json(input_file, function(error, mapData){ //sg_pop_5.json
+  features = mapData.features;
+  //all_infos = mapData.all_info;
+
+  // initialize information display
+  //updateInfo(null);
+  color.domain([d3.min(features, getResult) , d3.max(features, getResult)]);
+  mapLayer.selectAll('path')
+      .data(features)
+      .enter().append('path')
+      .attr('d', path)
+      .attr('vector-effect', 'non-scaling-stroke')
+      .style('fill', fillFn)
+      .on('mouseover', mouseover)
+      .on('mouseout', mouseout);
+
+
+  d3.select('#rate-select').on('change', function(){
+      output = this.value;
+      updateMap();
+  });
+ 
+});
+
+
+function updateInfo(d){
+  //if(d==null){
+    //dis_info = all_infos;
+  dis_info = d['info'];
+  /*}else{
+    dis_info = d['info'];
+  }*/
+  d3.select('#info-Name').html(name);
+  d3.select('#info-Area').html(dis_info['Area']);
+  d3.select('#info-log_pop').html(dis_info['log_pop'].toFixed(3));
+  d3.select('#info-Population').html(dis_info['Population']);
+  d3.select('#info-Density').html(dis_info['Density']);
+  
+  d3.select('#info-price_psqm_mean_hdb').html(dis_info['price_psqm_mean_hdb']);
+  d3.select('#info-price_psqm_mean_condo').html(dis_info['price_psqm_mean_condo']);
+  d3.select('#info-HDB_rate').html(dis_info['HDB_rate'].toFixed(3));
+  d3.select('#info-condo_rate').html(dis_info['condo_rate'].toFixed(3));
+  
+  d3.select('#info-Owner_rate').html(dis_info['Owner_rate'].toFixed(3));
+  d3.select('#info-tenant_rate').html(dis_info['tenant_rate'].toFixed(3));
+  
+  d3.select('#info-female_male_ratio').html(dis_info['female_male_ratio'].toFixed(3));
+  d3.select('#info-rate_65').html(dis_info['rate_65'].toFixed(3));
+  d3.select('#info-15-rate').html(dis_info['15-rate'].toFixed(3));
+  d3.select('#info-25-55rate').html(dis_info['25-55rate'].toFixed(3));
+  
+  d3.select('#info-Single_rate').html(dis_info['Single_rate'].toFixed(3));
+  d3.select('#info-Married_rate').html(dis_info['Married_rate'].toFixed(3));
+  
+  d3.select('#info-Chinese_rate').html(dis_info['Chinese_rate'].toFixed(3));
+  d3.select('#info-Malai_rate').html(dis_info['Malai_rate'].toFixed(3));
+  d3.select('#info-Indian_rate').html(dis_info['Indian_rate'].toFixed(3));
+  d3.select('#info-Other_ethnic_rate').html(dis_info['Other_ethnic_rate'].toFixed(3));
+  
+  d3.select('#info-University_rate').html(dis_info['University_rate'].toFixed(3));
+  d3.select('#info-Secondary_rate').html(dis_info['Secondary_rate'].toFixed(3));
+  d3.select('#info-No_Qualification_rate').html(dis_info['No_Qualification_rate'].toFixed(3));
+
+  d3.select('#info-Christinaity_rate').html(dis_info['Christinaity_rate'].toFixed(3));
+  d3.select('#info-Buddhism_rate').html(dis_info['Buddhism_rate'].toFixed(3));
+  d3.select('#info-Islam_rate').html(dis_info['Islam_rate'].toFixed(3));
+  
+  d3.select('#info-Below_1000_rate').html(dis_info['Below_1000_rate'].toFixed(3));
+  d3.select('#info-1000-10000_rate').html(dis_info['1000-10000_rate'].toFixed(3));
+  d3.select('#info-Above_10000_rate').html(dis_info['Above_10000_rate'].toFixed(3));
+  
+  d3.select('#info-Econo_Active_Rate').html(dis_info['Econo_Active_Rate'].toFixed(3));
+  
+  d3.select('#info-Manufacture_rate').html(dis_info['Manufacture_rate'].toFixed(3));
+  d3.select('#info-Construction_rate').html(dis_info['Construction_rate'].toFixed(3));
+  d3.select('#info-Services_rate').html(dis_info['Services_rate'].toFixed(3));
+  
+  d3.select('#info-Manager_rate').html(dis_info['Manager_rate'].toFixed(3));
+  d3.select('#info-white_collar_rate_2').html(dis_info['white_collar_rate_2'].toFixed(3));
+  d3.select('#info-blue_collar_rate').html(dis_info['blue_collar_rate'].toFixed(3));
+  
+  d3.select('#info-public_trans').html(dis_info['public_trans'].toFixed(3));
+  d3.select('#info-private_trans').html(dis_info['private_trans'].toFixed(3));
+  d3.select('#info-no_trans_need').html(dis_info['no_trans_need'].toFixed(3));
+  
+  d3.select('#info-trans_work_less_15m_rate').html(dis_info['trans_work_less_15m_rate'].toFixed(3));
+  d3.select('#info-trans_work_more_60m_rate').html(dis_info['trans_work_more_60m_rate'].toFixed(3));
+  d3.select('#info-trans_btw_15_60m_rate').html(dis_info['trans_btw_15_60m_rate'].toFixed(3));
+  
+  d3.select('#info-trans_sch_less_15m_rate').html(dis_info['trans_sch_less_15m_rate'].toFixed(3));
+  d3.select('#info-trans_sch_more_60m_rate').html(dis_info['trans_sch_more_60m_rate'].toFixed(3));
+  d3.select('#info-trans_sch_btw_15_60m_rate').html(dis_info['trans_sch_btw_15_60m_rate'].toFixed(3));
+  
+  d3.select('#info-no_fam_nucleus').html(dis_info['no_fam_nucleus'].toFixed(3));
+  d3.select('#info-two_fam_nucleus').html(dis_info['two_fam_nucleus'].toFixed(3));
+  d3.select('#info-one_nuc_one_gen').html(dis_info['one_nuc_one_gen'].toFixed(3));
+  d3.select('#info-one_nuc_two_gen').html(dis_info['one_nuc_two_gen'].toFixed(3));
+  
+  d3.select('#info-no_working_rate').html(dis_info['no_working_rate'].toFixed(3));
+  d3.select('#info-below_5000').html(dis_info['below_5000'].toFixed(3));
+  d3.select('#info-20000_over').html(dis_info['20000_over'].toFixed(3));
+  d3.select('#info-below_8000').html(dis_info['below_8000'].toFixed(3));
+  d3.select('#info-above_8000').html(dis_info['above_8000'].toFixed(3));
+  
+}
+
+
+function updateMap() {
+  color.domain([d3.min(features, getResult) , d3.max(features, getResult)]);
+  mapLayer.selectAll('path').style('fill', fillFn);
+}
+
+
+// show the name of the province
+function nameFn(d) {
+  return d && d.info ? d.info.Name : null;
+}
+
+// get the output value
+function getResult(d) {
+  if (!('info' in d)){
+    return 0;
+  }else{
+    return d['info'][output] ; //*1000
+  }
+}
+
+// the filling function
+function fillFn(d) {
+  return color(getResult(d));
+}
+
+function mouseover(d) {
+  d3.select(this).style('fill', '#B71C1C');
+  name = nameFn(d);
+  updateInfo(d);
+}
+
+function mouseout(d) {
+  mapLayer.selectAll('path').style('fill', function(d){
+    return d === centered ? '#B71C1C' : fillFn(d);
+  });
+
+  if(centered){
+    name = nameFn(d);
+    updateInfo(d);
+  }else{
+    name = 'HOUGANG';
+    updateInfo(d);
+  }
+  
+}
+</script>
+</body>
+</html>

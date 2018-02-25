@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.bar--negative {
+  fill: rgb(233, 70, 77);
+  font: 10px helvetica;
+}
+
+.bar--negative:hover {
+  fill: rgb(240, 145, 146);
+  font: 15px helvetica;
+}
+
+.bar--positive {
+  fill: rgb(102, 190, 150);
+  font: 10px helvetica;
+}
+
+.bar--positive:hover {
+  fill: rgb(191, 221, 163);
+  font: 15px helvetica;
+}
+
+#chart1 {
+  float: left;
+  font: 10px;
+}
+
+#infos {
+  float: left;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-family: helvetica;
+  font-size: 12px;
+  color: #777;
+}
+
+#selection {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.big1 {
+  font-size: 12px;
+  color: #777;
+}
+
+.big2 {
+  font-size: 12px;
+  color: rgb(233, 70, 77);
+}
+.sm2 {
+  color: rgb(102, 190, 150);
+} 
+
+#name {
+  color: #000;
+}
+
+</style>
+<body>
+<div id="selection">
+  <select id="selections">
+    <option selected disabled>Select</option>
+  </select>
+</div>
+
+<div>
+  <div id='infos'>
+  </div>
+  <div id="chart1">
+  </div>
+</div>
+
+<script src="d3.v3.min.js"></script>
+<script>
+
+var margin = {top: 50, right: 200, bottom: 40, left: 100},
+    width = 1000 - margin.left - margin.right,
+    height = 1000 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var c_pos = d3.scale.log().base(Math.E).range([255, 0]);
+var c_neg = d3.scale.linear().range([255, 0]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([0, height], 0.1);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var xAxis2 = d3.svg.axis()
+    .scale(x)
+    .orient("top");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickSize(0)
+    .tickPadding(6);
+
+var yAxis2 = d3.svg.axis()
+    .scale(y)
+    .orient("right")
+    .tickSize(0)
+    .tickPadding(6);
+
+d3.json("RandomForest.json", function(error, raw_data) {
+  var custs = d3.keys(raw_data);
+  var cust = '00001';
+
+  var select = d3.select("#selections");
+
+  var options = select
+      .selectAll('option')
+      .data(custs).enter()
+      .append('option')
+      .text(function (d) { return d; })
+      .attr('value', function(d){return d;});
+
+  update(cust);
+
+  d3.select("#selections").on("change", function() {
+    cust = this.value;
+    console.log(cust);
+    update(cust);
+  });
+
+  function update(cust){
+    d3.select("svg").remove();
+
+    var svg = d3.select("#chart1").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var infos_data = raw_data[cust]['infos'];
+    var infos_dis = '';
+    var id = '<span class="big1">ID:</span> ' + '<span class="big2">' + cust + '</span>' + '<br>';
+    // var pred = '<span class="big1">Score:</span> <span class="big2">' + Math.round(raw_data[cust]['prediction'] * 10000) / 10000 + '(0.004)</span><br>';
+    var name = '<span id="name" style="font-size: 30px">' + infos_data['pnamf'] + ' ' + infos_data['pname'] + '</span><br>';
+
+    // var birth = 'Birthday: <span class="sm2">' + infos_data['pdob'] + '</span><br>';
+	var age = 'Age: <span class="sm2">' + infos_data['pdob'] + '</span><br>';
+    var sex = 'Sex: <span class="sm2">' + infos_data['psex'] + '</span><br>';
+	var product = 'Product to buy: <span class="sm2">' + infos_data['chnl_agency'] + '</span><br>';
+	var probaclaim = 'Propensity to claim: <span class="sm2">' + infos_data['chnl_bank'] + '</span><br>';
+	var claimvalue = 'Expected value to claim: <span class="sm2">' + infos_data['chnl_cs'] + '</span><br>';
+	var claimValueDecile = 'Declie of expected claim value: <span class="sm2">' + infos_data['pol_inforce'] + '</span><br>';
+	var claimvalueSeg = 'Segmentation of expected claim value: <span class="sm2">' + infos_data['pol_count'] + '</span><br>';
+    //var all_pol = 'Number of policies bought: <span class="sm2">' + infos_data['pol_count'] + '</span><br>';
+    //var in_pol = 'Number of policies inforce: <span class="sm2">' + infos_data['pol_inforce'] + '</span><br>';
+    //var agency = 'Agency Channel: <span class="sm2">' + infos_data['chnl_agency'] + '</span><br>';
+    //var bank = 'Bank Channel: <span class="sm2">' + infos_data['chnl_bank'] + '</span><br>';
+    //var cs = 'Direct Channel: <span class="sm2">' + infos_data['chnl_cs'] + '</span><br>';
+    //var old_date = 'First Policy: <span class="sm2">' + infos_data['pno_min'] + ' (' + infos_data['pdoi_min'] + ')</span><br>';
+    //var new_date = 'Newest Policy: <span class="sm2">' + infos_data['pno_max'] + ' (' + infos_data['pdoi_max'] + ')</span><br>';
+    // infos_dis += name + id + pred + '<br><br><br>' + birth + sex + all_pol + in_pol + agency + bank + cs + old_date + new_date;
+	// infos_dis += name + id + pred + '<br><br><br>' + age + sex;
+	infos_dis += name + id + '<br><br><br>' + age + sex + product + probaclaim + claimvalue + claimValueDecile + claimvalueSeg;
+    d3.select('#infos').html(infos_dis);
+
+    var data = raw_data[cust]['features'];
+    x.domain(d3.extent(data, function(d) { return +d.contribution; }));
+    c_pos.domain(d3.extent(data, function(d) { 
+      if(+d.contribution > 0) return +d.contribution; 
+    }));
+    c_neg.domain(d3.extent(data, function(d) { 
+      if(+d.contribution < 0) return +d.contribution; 
+    })).nice();
+    y.domain(data.map(function(d) { return d.feature; }));
+
+    var bar = svg.selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("class", function(d) { return "bar bar--" + (+d.contribution < 0 ? "negative" : "positive"); })
+        .attr("transform", function(d) { return "translate(" + x(Math.min(0, +d.contribution)) + ","+ y(d.feature) + ")"; });
+
+    bar.append("rect")
+        .attr("width", function(d) { return Math.abs(x(+d.contribution) - x(0)); })
+        .attr("height", y.rangeBand());
+
+    bar.append("text")
+        .attr("x", function(d) { 
+          return Math.abs(x(+d.contribution) - x(0)) + 5;
+        })
+        .attr("dy", "1.2em")
+        .text(function(d) { return d.feature + " : " + d.value;});
+  }
+});
+
+</script>
+</body>

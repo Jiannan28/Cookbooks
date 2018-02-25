@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>ML Model Scores Explainer</title>
+  <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/jquery.dynatable.css') }}">
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.dynatable.js') }}"></script>
+<style>
+  div {
+    border: 1.5px solid #000000;
+  }
+
+  #home-container {
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 3vw;
+  }
+{% block style %}{% endblock %}
+</style>
+</head>
+
+<body>
+<div class='container-fluid' id='home-container'>
+  <h1>Score explainer for ML Model</h1>
+  <p>Explaining the predictions from XGBoost algorithm</p>
+
+  <div class='row'>
+    <div class='col-sm-5' id='left-container'> 
+    {% block leftInfo %}{% endblock %}
+    </div>
+    <div class='col-sm-7'>
+    {% block rightInfo %}{% endblock %}
+    </div>
+  </div>
+</div>
+
+{% block JS %}{% endblock %}
+</body>
+</html>

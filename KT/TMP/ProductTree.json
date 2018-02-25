@@ -1,0 +1,5564 @@
+﻿{
+  "rules": {
+    "Smart Protector": {
+      "1": [
+        "Age <= 23"
+      ],
+      "2": [
+        "Age > 23"
+      ],
+      "3": [
+        "Age > 23",
+        "Not White Collar"
+      ],
+      "4": [
+        "Age > 23",
+        "White Collar"
+      ],
+      "5": [
+        "Age <= 13"
+      ],
+      "6": [
+        "13 < Age <= 23"
+      ],
+      "7": [
+        "Age > 23",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "8": [
+        "Age > 23",
+        "White Collar",
+        "Income > 45%"
+      ],
+      "9": [
+        "Age > 23",
+        "Not Male",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "10": [
+        "Male",
+        "Age > 23",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "11": [
+        "Not Male",
+        "White Collar",
+        "Income <= 45%",
+        "23 < Age <= 29"
+      ],
+      "12": [
+        "Age > 29",
+        "Not Male",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "13": [
+        "23 < Age <= 63",
+        "Not White Collar"
+      ],
+      "14": [
+        "Age > 63",
+        "Not White Collar"
+      ],
+      "15": [
+        "White Collar",
+        "Income > 45%",
+        "23 < Age <= 33"
+      ],
+      "16": [
+        "Age > 33",
+        "White Collar",
+        "Income > 45%"
+      ],
+      "17": [
+        "Not Male",
+        "White Collar",
+        "Income <= 45%",
+        "29 < Age <= 59"
+      ],
+      "18": [
+        "Age > 59",
+        "Not Male",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "19": [
+        "Not Male",
+        "23 < Age <= 63",
+        "Not White Collar"
+      ],
+      "20": [
+        "Male",
+        "23 < Age <= 63",
+        "Not White Collar"
+      ],
+      "21": [
+        "Age > 33",
+        "Not Male",
+        "White Collar",
+        "Income > 45%"
+      ],
+      "22": [
+        "Male",
+        "Age > 33",
+        "White Collar",
+        "Income > 45%"
+      ],
+      "23": [
+        "Age <= 13",
+        "Income <= 38%"
+      ],
+      "24": [
+        "Age <= 13",
+        "Income > 38%"
+      ],
+      "25": [
+        "Age > 63",
+        "Income <= 75%",
+        "Not White Collar"
+      ],
+      "26": [
+        "Age > 63",
+        "Income > 75%",
+        "Not White Collar"
+      ],
+      "27": [
+        "Male",
+        "Not Rate-up",
+        "23 < Age <= 63",
+        "Not White Collar"
+      ],
+      "28": [
+        "Male",
+        "Rate-up",
+        "23 < Age <= 63",
+        "Not White Collar"
+      ],
+      "29": [
+        "Male",
+        "White Collar",
+        "Income <= 45%",
+        "23 < Age <= 58"
+      ],
+      "30": [
+        "Male",
+        "Age > 58",
+        "White Collar",
+        "Income <= 45%"
+      ],
+      "31": [
+        "Not Male",
+        "23 < Age <= 63",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "32": [
+        "Not Male",
+        "23 < Age <= 63",
+        "Not White Collar",
+        "Occupation Unknown"
+      ],
+      "33": [
+        "Age <= 13",
+        "Income > 38%",
+        "Not White Collar"
+      ],
+      "34": [
+        "Age <= 13",
+        "White Collar",
+        "Income > 38%"
+      ],
+      "35": [
+        "Male",
+        "Not Rate-up",
+        "23 < Age <= 47",
+        "Not White Collar"
+      ],
+      "36": [
+        "Male",
+        "Not Rate-up",
+        "47 < Age <= 63",
+        "Not White Collar"
+      ],
+      "37": [
+        "Male",
+        "Age > 33",
+        "White Collar",
+        "45% < Income <= 73%"
+      ],
+      "38": [
+        "Male",
+        "Age > 33",
+        "White Collar",
+        "Income > 73%"
+      ],
+      "39": [
+        "Male",
+        "Not Rate-up",
+        "Income <= 36%",
+        "47 < Age <= 63",
+        "Not White Collar"
+      ],
+      "40": [
+        "Male",
+        "Not Rate-up",
+        "Income > 36%",
+        "47 < Age <= 63",
+        "Not White Collar"
+      ],
+      "41": [
+        "Not Male",
+        "White Collar",
+        "Income <= 29%",
+        "29 < Age <= 59"
+      ],
+      "42": [
+        "Not Male",
+        "White Collar",
+        "29 < Age <= 59",
+        "29% < Income <= 45%"
+      ],
+      "43": [
+        "Age > 63",
+        "Income <= 37%",
+        "Not White Collar"
+      ],
+      "44": [
+        "Age > 63",
+        "Not White Collar",
+        "37% < Income <= 75%"
+      ],
+      "45": [
+        "Not Male",
+        "23 < Age <= 29",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "46": [
+        "Not Male",
+        "29 < Age <= 63",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "47": [
+        "Not Male",
+        "29 < Age <= 44",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "48": [
+        "Not Male",
+        "44 < Age <= 63",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "49": [
+        "Not Male",
+        "Income <= 77%",
+        "44 < Age <= 63",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "50": [
+        "Not Male",
+        "Income > 77%",
+        "44 < Age <= 63",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ]
+    },
+    "test": {
+      "1": [
+        "Age <= 49"
+      ],
+      "2": [
+        "Age > 49"
+      ],
+      "3": [
+        "Age > 49",
+        "Not Occupation Unknown"
+      ],
+      "4": [
+        "Age > 49",
+        "Occupation Unknown"
+      ],
+      "5": [
+        "49 < Age <= 55",
+        "Not Occupation Unknown"
+      ],
+      "6": [
+        "Age > 55",
+        "Not Occupation Unknown"
+      ],
+      "7": [
+        "55 < Age <= 59",
+        "Not Occupation Unknown"
+      ],
+      "8": [
+        "Age > 59",
+        "Not Occupation Unknown"
+      ],
+      "9": [
+        "Income <= 66%",
+        "49 < Age <= 55",
+        "Not Occupation Unknown"
+      ],
+      "10": [
+        "Income > 66%",
+        "49 < Age <= 55",
+        "Not Occupation Unknown"
+      ]
+    },
+    "Universal Life": {
+      "1": [
+        "Age <= 49"
+      ],
+      "2": [
+        "Age > 49"
+      ],
+      "3": [
+        "49 < Age <= 65"
+      ],
+      "4": [
+        "Age > 65"
+      ],
+      "5": [
+        "49 < Age <= 65",
+        "Not White Collar"
+      ],
+      "6": [
+        "White Collar",
+        "49 < Age <= 65"
+      ],
+      "7": [
+        "Age <= 49",
+        "Income <= 38%"
+      ],
+      "8": [
+        "Age <= 49",
+        "Income > 38%"
+      ],
+      "9": [
+        "Age <= 49",
+        "38% < Income <= 71%"
+      ],
+      "10": [
+        "Age <= 49",
+        "Income > 71%"
+      ],
+      "11": [
+        "Age <= 49",
+        "38% < Income <= 71%",
+        "Not Occupation Unknown"
+      ],
+      "12": [
+        "Age <= 49",
+        "Occupation Unknown",
+        "38% < Income <= 71%"
+      ],
+      "13": [
+        "White Collar",
+        "Income <= 76%",
+        "49 < Age <= 65"
+      ],
+      "14": [
+        "White Collar",
+        "Income > 76%",
+        "49 < Age <= 65"
+      ],
+      "15": [
+        "White Collar",
+        "Income <= 51%",
+        "49 < Age <= 65"
+      ],
+      "16": [
+        "White Collar",
+        "49 < Age <= 65",
+        "51% < Income <= 76%"
+      ],
+      "17": [
+        "Not Male",
+        "Age <= 49",
+        "38% < Income <= 71%",
+        "Not Occupation Unknown"
+      ],
+      "18": [
+        "Male",
+        "Age <= 49",
+        "38% < Income <= 71%",
+        "Not Occupation Unknown"
+      ]
+    },
+    "Protection Life": {
+      "1": [
+        "Age <= 19"
+      ],
+      "2": [
+        "Age > 19"
+      ],
+      "3": [
+        "19 < Age <= 50"
+      ],
+      "4": [
+        "Age > 50"
+      ],
+      "5": [
+        "50 < Age <= 59"
+      ],
+      "6": [
+        "Age > 59"
+      ],
+      "7": [
+        "50 < Age <= 59",
+        "Not White Collar"
+      ],
+      "8": [
+        "White Collar",
+        "50 < Age <= 59"
+      ],
+      "9": [
+        "Income <= 13%",
+        "19 < Age <= 50"
+      ],
+      "10": [
+        "Income > 13%",
+        "19 < Age <= 50"
+      ],
+      "11": [
+        "Income > 13%",
+        "19 < Age <= 50",
+        "Not White Collar"
+      ],
+      "12": [
+        "White Collar",
+        "Income > 13%",
+        "19 < Age <= 50"
+      ],
+      "13": [
+        "White Collar",
+        "Income > 13%",
+        "19 < Age <= 36"
+      ],
+      "14": [
+        "White Collar",
+        "Income > 13%",
+        "36 < Age <= 50"
+      ],
+      "15": [
+        "White Collar",
+        "19 < Age <= 36",
+        "13% < Income <= 66%"
+      ],
+      "16": [
+        "White Collar",
+        "Income > 66%",
+        "19 < Age <= 36"
+      ],
+      "17": [
+        "White Collar",
+        "Income <= 42%",
+        "50 < Age <= 59"
+      ],
+      "18": [
+        "White Collar",
+        "Income > 42%",
+        "50 < Age <= 59"
+      ],
+      "19": [
+        "White Collar",
+        "36 < Age <= 50",
+        "13% < Income <= 71%"
+      ],
+      "20": [
+        "White Collar",
+        "Income > 71%",
+        "36 < Age <= 50"
+      ],
+      "21": [
+        "Not Male",
+        "White Collar",
+        "Income <= 42%",
+        "50 < Age <= 59"
+      ],
+      "22": [
+        "Male",
+        "White Collar",
+        "Income <= 42%",
+        "50 < Age <= 59"
+      ],
+      "23": [
+        "Income <= 13%",
+        "Not Heavy Duty",
+        "19 < Age <= 50"
+      ],
+      "24": [
+        "Heavy Duty",
+        "Income <= 13%",
+        "19 < Age <= 50"
+      ],
+      "25": [
+        "Income <= 13%",
+        "Not Heavy Duty",
+        "19 < Age <= 23"
+      ],
+      "26": [
+        "Income <= 13%",
+        "Not Heavy Duty",
+        "23 < Age <= 50"
+      ],
+      "27": [
+        "White Collar",
+        "50 < Age <= 59",
+        "42% < Income <= 79%"
+      ],
+      "28": [
+        "White Collar",
+        "Income > 79%",
+        "50 < Age <= 59"
+      ],
+      "29": [
+        "Income > 13%",
+        "19 < Age <= 37",
+        "Not White Collar"
+      ],
+      "30": [
+        "Income > 13%",
+        "37 < Age <= 50",
+        "Not White Collar"
+      ],
+      "31": [
+        "19 < Age <= 37",
+        "Not White Collar",
+        "13% < Income <= 67%"
+      ],
+      "32": [
+        "Income > 67%",
+        "19 < Age <= 37",
+        "Not White Collar"
+      ],
+      "33": [
+        "Income > 13%",
+        "Not Heavy Duty",
+        "37 < Age <= 50",
+        "Not White Collar"
+      ],
+      "34": [
+        "Heavy Duty",
+        "Income > 13%",
+        "37 < Age <= 50",
+        "Not White Collar"
+      ],
+      "35": [
+        "Not Male",
+        "White Collar",
+        "19 < Age <= 36",
+        "13% < Income <= 66%"
+      ],
+      "36": [
+        "Male",
+        "White Collar",
+        "19 < Age <= 36",
+        "13% < Income <= 66%"
+      ],
+      "37": [
+        "Not Male",
+        "White Collar",
+        "19 < Age <= 23",
+        "13% < Income <= 66%"
+      ],
+      "38": [
+        "Not Male",
+        "White Collar",
+        "23 < Age <= 36",
+        "13% < Income <= 66%"
+      ],
+      "39": [
+        "Not Male",
+        "White Collar",
+        "Income <= 19%",
+        "50 < Age <= 59"
+      ],
+      "40": [
+        "Not Male",
+        "White Collar",
+        "50 < Age <= 59",
+        "19% < Income <= 42%"
+      ],
+      "41": [
+        "White Collar",
+        "36 < Age <= 42",
+        "13% < Income <= 71%"
+      ],
+      "42": [
+        "White Collar",
+        "42 < Age <= 50",
+        "13% < Income <= 71%"
+      ],
+      "43": [
+        "Income <= 14%",
+        "50 < Age <= 59",
+        "Not White Collar"
+      ],
+      "44": [
+        "Income > 14%",
+        "50 < Age <= 59",
+        "Not White Collar"
+      ],
+      "45": [
+        "Income > 14%",
+        "50 < Age <= 54",
+        "Not White Collar"
+      ],
+      "46": [
+        "Income > 14%",
+        "54 < Age <= 59",
+        "Not White Collar"
+      ],
+      "47": [
+        "19 < Age <= 37",
+        "Not White Collar",
+        "13% < Income <= 50%"
+      ],
+      "48": [
+        "19 < Age <= 37",
+        "Not White Collar",
+        "50% < Income <= 67%"
+      ]
+    },
+    "Example Product": {
+      "1": [
+        "Income <= 39%"
+      ],
+      "2": [
+        "Income > 39%"
+      ],
+      "3": [
+        "Age <= 33",
+        "Income <= 39%"
+      ],
+      "4": [
+        "Age > 33",
+        "Income <= 39%"
+      ],
+      "5": [
+        "Age <= 29",
+        "Income > 39%"
+      ],
+      "6": [
+        "Age > 29",
+        "Income > 39%"
+      ],
+      "7": [
+        "Age > 33",
+        "Not Rate-up",
+        "Income <= 39%"
+      ],
+      "8": [
+        "Rate-up",
+        "Age > 33",
+        "Income <= 39%"
+      ],
+      "9": [
+        "Age > 33",
+        "Not Rate-up",
+        "Income <= 39%",
+        "Not White Collar"
+      ],
+      "10": [
+        "Age > 33",
+        "Not Rate-up",
+        "White Collar",
+        "Income <= 39%"
+      ],
+      "11": [
+        "Age <= 33",
+        "Income <= 26%"
+      ],
+      "12": [
+        "Age <= 33",
+        "26% < Income <= 39%"
+      ],
+      "13": [
+        "Age <= 33",
+        "Income <= 21%"
+      ],
+      "14": [
+        "Age <= 33",
+        "21% < Income <= 26%"
+      ],
+      "15": [
+        "Age > 33",
+        "Not Rate-up",
+        "White Collar",
+        "Income <= 30%"
+      ],
+      "16": [
+        "Age > 33",
+        "Not Rate-up",
+        "White Collar",
+        "30% < Income <= 39%"
+      ],
+      "17": [
+        "Age > 29",
+        "39% < Income <= 65%"
+      ],
+      "18": [
+        "Age > 29",
+        "Income > 65%"
+      ],
+      "19": [
+        "Age <= 33",
+        "Not Single",
+        "26% < Income <= 39%"
+      ],
+      "20": [
+        "Single",
+        "Age <= 33",
+        "26% < Income <= 39%"
+      ],
+      "21": [
+        "Age <= 33",
+        "Not Single",
+        "Not Blue Collar",
+        "26% < Income <= 39%"
+      ],
+      "22": [
+        "Age <= 33",
+        "Not Single",
+        "Blue Collar",
+        "26% < Income <= 39%"
+      ],
+      "23": [
+        "Not Rate-up",
+        "White Collar",
+        "Income <= 30%",
+        "33 < Age <= 43"
+      ],
+      "24": [
+        "Age > 43",
+        "Not Rate-up",
+        "White Collar",
+        "Income <= 30%"
+      ],
+      "25": [
+        "Age <= 29",
+        "39% < Income <= 64%"
+      ],
+      "26": [
+        "Age <= 29",
+        "Income > 64%"
+      ],
+      "27": [
+        "Age > 29",
+        "Not Married",
+        "39% < Income <= 65%"
+      ],
+      "28": [
+        "Married",
+        "Age > 29",
+        "39% < Income <= 65%"
+      ],
+      "29": [
+        "Age <= 33",
+        "Income <= 21%",
+        "Not Blue Collar"
+      ],
+      "30": [
+        "Age <= 33",
+        "Blue Collar",
+        "Income <= 21%"
+      ],
+      "31": [
+        "Not Rate-up",
+        "Income <= 39%",
+        "33 < Age <= 65",
+        "Not White Collar"
+      ],
+      "32": [
+        "Age > 65",
+        "Not Rate-up",
+        "Income <= 39%",
+        "Not White Collar"
+      ],
+      "33": [
+        "Married",
+        "Age > 29",
+        "Not White Collar",
+        "39% < Income <= 65%"
+      ],
+      "34": [
+        "Married",
+        "Age > 29",
+        "White Collar",
+        "39% < Income <= 65%"
+      ],
+      "35": [
+        "Married",
+        "29 < Age <= 52",
+        "Not White Collar",
+        "39% < Income <= 65%"
+      ],
+      "36": [
+        "Married",
+        "Age > 52",
+        "Not White Collar",
+        "39% < Income <= 65%"
+      ],
+      "37": [
+        "Married",
+        "White Collar",
+        "29 < Age <= 49",
+        "39% < Income <= 65%"
+      ],
+      "38": [
+        "Married",
+        "Age > 49",
+        "White Collar",
+        "39% < Income <= 65%"
+      ],
+      "39": [
+        "Married",
+        "White Collar",
+        "49 < Age <= 60",
+        "39% < Income <= 65%"
+      ],
+      "40": [
+        "Married",
+        "Age > 60",
+        "White Collar",
+        "39% < Income <= 65%"
+      ],
+      "41": [
+        "Not Male",
+        "Not Rate-up",
+        "Income <= 39%",
+        "33 < Age <= 65",
+        "Not White Collar"
+      ],
+      "42": [
+        "Male",
+        "Not Rate-up",
+        "Income <= 39%",
+        "33 < Age <= 65",
+        "Not White Collar"
+      ],
+      "43": [
+        "Not Rate-up",
+        "White Collar",
+        "33 < Age <= 63",
+        "30% < Income <= 39%"
+      ],
+      "44": [
+        "Age > 63",
+        "Not Rate-up",
+        "White Collar",
+        "30% < Income <= 39%"
+      ],
+      "45": [
+        "Not Married",
+        "29 < Age <= 36",
+        "39% < Income <= 65%"
+      ],
+      "46": [
+        "Age > 36",
+        "Not Married",
+        "39% < Income <= 65%"
+      ],
+      "47": [
+        "Not Married",
+        "36 < Age <= 43",
+        "39% < Income <= 65%"
+      ],
+      "48": [
+        "Age > 43",
+        "Not Married",
+        "39% < Income <= 65%"
+      ],
+      "49": [
+        "Age <= 29",
+        "Not Single",
+        "Income > 64%"
+      ],
+      "50": [
+        "Single",
+        "Age <= 29",
+        "Income > 64%"
+      ],
+      "51": [
+        "Married",
+        "Age > 52",
+        "Not White Collar",
+        "39% < Income <= 59%"
+      ],
+      "52": [
+        "Married",
+        "Age > 52",
+        "Not White Collar",
+        "59% < Income <= 65%"
+      ],
+      "53": [
+        "Age <= 1",
+        "39% < Income <= 64%"
+      ],
+      "54": [
+        "1 < Age <= 29",
+        "39% < Income <= 64%"
+      ],
+      "55": [
+        "Age <= 33",
+        "Not Single",
+        "Income <= 21%",
+        "Not Blue Collar"
+      ],
+      "56": [
+        "Single",
+        "Age <= 33",
+        "Income <= 21%",
+        "Not Blue Collar"
+      ]
+    },
+    "iProtect": {
+      "1": [
+        "Age <= 23"
+      ],
+      "2": [
+        "Age > 23"
+      ],
+      "3": [
+        "23 < Age <= 59"
+      ],
+      "4": [
+        "Age > 59"
+      ],
+      "5": [
+        "Age <= 11"
+      ],
+      "6": [
+        "11 < Age <= 23"
+      ],
+      "7": [
+        "Income <= 71%",
+        "23 < Age <= 59"
+      ],
+      "8": [
+        "Income > 71%",
+        "23 < Age <= 59"
+      ],
+      "9": [
+        "Not Male",
+        "Income <= 71%",
+        "23 < Age <= 59"
+      ],
+      "10": [
+        "Male",
+        "Income <= 71%",
+        "23 < Age <= 59"
+      ],
+      "11": [
+        "Not Male",
+        "Income <= 71%",
+        "23 < Age <= 29"
+      ],
+      "12": [
+        "Not Male",
+        "Income <= 71%",
+        "29 < Age <= 59"
+      ],
+      "13": [
+        "Not Male",
+        "Income <= 71%",
+        "29 < Age <= 59",
+        "Not White Collar"
+      ],
+      "14": [
+        "Not Male",
+        "White Collar",
+        "Income <= 71%",
+        "29 < Age <= 59"
+      ],
+      "15": [
+        "59 < Age <= 63"
+      ],
+      "16": [
+        "Age > 63"
+      ],
+      "17": [
+        "Not Male",
+        "Income <= 71%",
+        "29 < Age <= 47",
+        "Not White Collar"
+      ],
+      "18": [
+        "Not Male",
+        "Income <= 71%",
+        "47 < Age <= 59",
+        "Not White Collar"
+      ],
+      "19": [
+        "Age <= 2"
+      ],
+      "20": [
+        "2 < Age <= 11"
+      ],
+      "21": [
+        "Male",
+        "Income <= 71%",
+        "23 < Age <= 59",
+        "Not Blue Collar"
+      ],
+      "22": [
+        "Male",
+        "Blue Collar",
+        "Income <= 71%",
+        "23 < Age <= 59"
+      ],
+      "23": [
+        "Male",
+        "Income <= 71%",
+        "23 < Age <= 29",
+        "Not Blue Collar"
+      ],
+      "24": [
+        "Male",
+        "Income <= 71%",
+        "29 < Age <= 59",
+        "Not Blue Collar"
+      ],
+      "25": [
+        "23 < Age <= 59",
+        "71% < Income <= 81%"
+      ],
+      "26": [
+        "Income > 81%",
+        "23 < Age <= 59"
+      ],
+      "27": [
+        "Male",
+        "Blue Collar",
+        "Income <= 71%",
+        "23 < Age <= 48"
+      ],
+      "28": [
+        "Male",
+        "Blue Collar",
+        "Income <= 71%",
+        "48 < Age <= 59"
+      ],
+      "29": [
+        "Not Male",
+        "Income <= 71%",
+        "23 < Age <= 26"
+      ],
+      "30": [
+        "Not Male",
+        "Income <= 71%",
+        "26 < Age <= 29"
+      ],
+      "31": [
+        "23 < Age <= 59",
+        "81% < Income <= 86%"
+      ],
+      "32": [
+        "Income > 86%",
+        "23 < Age <= 59"
+      ]
+    },
+    "MI ProductA": {
+      "1": [
+        "Age <= 15"
+      ],
+      "2": [
+        "Age > 15"
+      ],
+      "3": [
+        "Age > 15",
+        "Income <= 47%"
+      ],
+      "4": [
+        "Age > 15",
+        "Income > 47%"
+      ],
+      "5": [
+        "Income > 47%",
+        "15 < Age <= 33"
+      ],
+      "6": [
+        "Age > 33",
+        "Income > 47%"
+      ],
+      "7": [
+        "Income <= 47%",
+        "15 < Age <= 27"
+      ],
+      "8": [
+        "Age > 27",
+        "Income <= 47%"
+      ],
+      "9": [
+        "Age <= 7"
+      ],
+      "10": [
+        "7 < Age <= 15"
+      ],
+      "11": [
+        "Age > 27",
+        "Not Married",
+        "Income <= 47%"
+      ],
+      "12": [
+        "Married",
+        "Age > 27",
+        "Income <= 47%"
+      ],
+      "13": [
+        "Age <= 7",
+        "Income <= 80%"
+      ],
+      "14": [
+        "Age <= 7",
+        "Income > 80%"
+      ],
+      "15": [
+        "Married",
+        "Income <= 47%",
+        "27 < Age <= 34"
+      ],
+      "16": [
+        "Married",
+        "Age > 34",
+        "Income <= 47%"
+      ],
+      "17": [
+        "Married",
+        "Income <= 11%",
+        "27 < Age <= 34"
+      ],
+      "18": [
+        "Married",
+        "27 < Age <= 34",
+        "11% < Income <= 47%"
+      ],
+      "19": [
+        "Income > 47%",
+        "15 < Age <= 17"
+      ],
+      "20": [
+        "Income > 47%",
+        "17 < Age <= 33"
+      ],
+      "21": [
+        "Age > 27",
+        "Not Married",
+        "Income <= 42%"
+      ],
+      "22": [
+        "Age > 27",
+        "Not Married",
+        "42% < Income <= 47%"
+      ],
+      "23": [
+        "Income <= 22%",
+        "15 < Age <= 27"
+      ],
+      "24": [
+        "15 < Age <= 27",
+        "22% < Income <= 47%"
+      ],
+      "25": [
+        "17 < Age <= 33",
+        "47% < Income <= 55%"
+      ],
+      "26": [
+        "Income > 55%",
+        "17 < Age <= 33"
+      ],
+      "27": [
+        "Not Married",
+        "Income <= 42%",
+        "27 < Age <= 65"
+      ],
+      "28": [
+        "Age > 65",
+        "Not Married",
+        "Income <= 42%"
+      ],
+      "29": [
+        "7 < Age <= 13"
+      ],
+      "30": [
+        "13 < Age <= 15"
+      ],
+      "31": [
+        "Married",
+        "Income <= 47%",
+        "34 < Age <= 65"
+      ],
+      "32": [
+        "Married",
+        "Age > 65",
+        "Income <= 47%"
+      ],
+      "33": [
+        "Married",
+        "Income <= 47%",
+        "34 < Age <= 60"
+      ],
+      "34": [
+        "Married",
+        "Income <= 47%",
+        "60 < Age <= 65"
+      ],
+      "35": [
+        "Not Married",
+        "Not Housewife",
+        "Income <= 42%",
+        "27 < Age <= 65"
+      ],
+      "36": [
+        "Housewife",
+        "Not Married",
+        "Income <= 42%",
+        "27 < Age <= 65"
+      ]
+    },
+    "Perfect Health Solution": {
+      "1": [
+        "Age <= 40"
+      ],
+      "2": [
+        "Age > 40"
+      ],
+      "3": [
+        "Age <= 40",
+        "Income <= 38%"
+      ],
+      "4": [
+        "Age <= 40",
+        "Income > 38%"
+      ],
+      "5": [
+        "Age > 40",
+        "Income <= 77%"
+      ],
+      "6": [
+        "Age > 40",
+        "Income > 77%"
+      ],
+      "7": [
+        "Age <= 40",
+        "38% < Income <= 66%"
+      ],
+      "8": [
+        "Age <= 40",
+        "Income > 66%"
+      ],
+      "9": [
+        "Age <= 34",
+        "38% < Income <= 66%"
+      ],
+      "10": [
+        "34 < Age <= 40",
+        "38% < Income <= 66%"
+      ],
+      "11": [
+        "Age <= 30",
+        "Income <= 38%"
+      ],
+      "12": [
+        "Income <= 38%",
+        "30 < Age <= 40"
+      ],
+      "13": [
+        "Income <= 77%",
+        "40 < Age <= 46"
+      ],
+      "14": [
+        "Age > 46",
+        "Income <= 77%"
+      ],
+      "15": [
+        "Age <= 3",
+        "38% < Income <= 66%"
+      ],
+      "16": [
+        "3 < Age <= 34",
+        "38% < Income <= 66%"
+      ],
+      "17": [
+        "Age <= 3",
+        "38% < Income <= 66%",
+        "Not Occupation Unknown"
+      ],
+      "18": [
+        "Age <= 3",
+        "Occupation Unknown",
+        "38% < Income <= 66%"
+      ],
+      "19": [
+        "Age > 40",
+        "77% < Income <= 82%"
+      ],
+      "20": [
+        "Age > 40",
+        "Income > 82%"
+      ],
+      "21": [
+        "Age <= 40",
+        "66% < Income <= 76%"
+      ],
+      "22": [
+        "Age <= 40",
+        "Income > 76%"
+      ],
+      "23": [
+        "Income <= 56%",
+        "40 < Age <= 46"
+      ],
+      "24": [
+        "40 < Age <= 46",
+        "56% < Income <= 77%"
+      ],
+      "25": [
+        "Not Housewife",
+        "Income <= 56%",
+        "40 < Age <= 46"
+      ],
+      "26": [
+        "Housewife",
+        "Income <= 56%",
+        "40 < Age <= 46"
+      ],
+      "27": [
+        "Age <= 3",
+        "38% < Income <= 39%",
+        "Not Occupation Unknown"
+      ],
+      "28": [
+        "Age <= 3",
+        "39% < Income <= 66%",
+        "Not Occupation Unknown"
+      ],
+      "29": [
+        "Age <= 3",
+        "Income <= 38%"
+      ],
+      "30": [
+        "3 < Age <= 30",
+        "Income <= 38%"
+      ],
+      "31": [
+        "3 < Age <= 34",
+        "38% < Income <= 55%"
+      ],
+      "32": [
+        "3 < Age <= 34",
+        "55% < Income <= 66%"
+      ]
+    },
+    "i-Wish": {
+      "1": [
+        "Income <= 55%"
+      ],
+      "2": [
+        "Income > 55%"
+      ],
+      "3": [
+        "Age <= 24",
+        "Income > 55%"
+      ],
+      "4": [
+        "Age > 24",
+        "Income > 55%"
+      ],
+      "5": [
+        "Age <= 19",
+        "Income <= 55%"
+      ],
+      "6": [
+        "Age > 19",
+        "Income <= 55%"
+      ],
+      "7": [
+        "Age > 24",
+        "Income > 55%",
+        "Not White Collar"
+      ],
+      "8": [
+        "Age > 24",
+        "White Collar",
+        "Income > 55%"
+      ],
+      "9": [
+        "Age > 19",
+        "Income <= 55%",
+        "Not White Collar"
+      ],
+      "10": [
+        "Age > 19",
+        "White Collar",
+        "Income <= 55%"
+      ],
+      "11": [
+        "Age > 24",
+        "White Collar",
+        "55% < Income <= 66%"
+      ],
+      "12": [
+        "Age > 24",
+        "White Collar",
+        "Income > 66%"
+      ],
+      "13": [
+        "Age > 19",
+        "White Collar",
+        "Income <= 37%"
+      ],
+      "14": [
+        "Age > 19",
+        "White Collar",
+        "37% < Income <= 55%"
+      ],
+      "15": [
+        "Age > 19",
+        "Income <= 55%",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "16": [
+        "Age > 19",
+        "Income <= 55%",
+        "Not White Collar",
+        "Occupation Unknown"
+      ],
+      "17": [
+        "White Collar",
+        "Income > 66%",
+        "24 < Age <= 60"
+      ],
+      "18": [
+        "Age > 60",
+        "White Collar",
+        "Income > 66%"
+      ],
+      "19": [
+        "Age > 19",
+        "White Collar",
+        "37% < Income <= 39%"
+      ],
+      "20": [
+        "Age > 19",
+        "White Collar",
+        "39% < Income <= 55%"
+      ],
+      "21": [
+        "Age > 24",
+        "Not Single",
+        "Income > 55%",
+        "Not White Collar"
+      ],
+      "22": [
+        "Single",
+        "Age > 24",
+        "Income > 55%",
+        "Not White Collar"
+      ],
+      "23": [
+        "Age > 19",
+        "White Collar",
+        "Income <= 4%"
+      ],
+      "24": [
+        "Age > 19",
+        "White Collar",
+        "4% < Income <= 37%"
+      ],
+      "25": [
+        "Age > 24",
+        "Not Single",
+        "Not White Collar",
+        "55% < Income <= 76%"
+      ],
+      "26": [
+        "Age > 24",
+        "Not Single",
+        "Income > 76%",
+        "Not White Collar"
+      ],
+      "27": [
+        "Age > 19",
+        "Not Single",
+        "White Collar",
+        "4% < Income <= 37%"
+      ],
+      "28": [
+        "Single",
+        "Age > 19",
+        "White Collar",
+        "4% < Income <= 37%"
+      ],
+      "29": [
+        "Age > 19",
+        "Income <= 55%",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "30": [
+        "Age > 19",
+        "Heavy Duty",
+        "Income <= 55%",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "31": [
+        "Age > 19",
+        "White Collar",
+        "39% < Income <= 42%"
+      ],
+      "32": [
+        "Age > 19",
+        "White Collar",
+        "42% < Income <= 55%"
+      ],
+      "33": [
+        "Age > 24",
+        "Not Single",
+        "White Collar",
+        "55% < Income <= 66%"
+      ],
+      "34": [
+        "Single",
+        "Age > 24",
+        "White Collar",
+        "55% < Income <= 66%"
+      ],
+      "35": [
+        "Income <= 55%",
+        "19 < Age <= 60",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "36": [
+        "Age > 60",
+        "Income <= 55%",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "37": [
+        "Age <= 20",
+        "Income > 55%"
+      ],
+      "38": [
+        "Income > 55%",
+        "20 < Age <= 24"
+      ],
+      "39": [
+        "Age > 19",
+        "Not Single",
+        "White Collar",
+        "42% < Income <= 55%"
+      ],
+      "40": [
+        "Single",
+        "Age > 19",
+        "White Collar",
+        "42% < Income <= 55%"
+      ],
+      "41": [
+        "Age > 19",
+        "Not Single",
+        "Income <= 55%",
+        "Not White Collar",
+        "Occupation Unknown"
+      ],
+      "42": [
+        "Single",
+        "Age > 19",
+        "Income <= 55%",
+        "Not White Collar",
+        "Occupation Unknown"
+      ],
+      "43": [
+        "Not Single",
+        "24 < Age <= 43",
+        "Not White Collar",
+        "55% < Income <= 76%"
+      ],
+      "44": [
+        "Age > 43",
+        "Not Single",
+        "Not White Collar",
+        "55% < Income <= 76%"
+      ],
+      "45": [
+        "Not Single",
+        "43 < Age <= 54",
+        "Not White Collar",
+        "55% < Income <= 76%"
+      ],
+      "46": [
+        "Age > 54",
+        "Not Single",
+        "Not White Collar",
+        "55% < Income <= 76%"
+      ],
+      "47": [
+        "Not Single",
+        "Income <= 55%",
+        "19 < Age <= 60",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "48": [
+        "Single",
+        "Income <= 55%",
+        "19 < Age <= 60",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "49": [
+        "Single",
+        "Not Male",
+        "Income <= 55%",
+        "19 < Age <= 60",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "50": [
+        "Male",
+        "Single",
+        "Income <= 55%",
+        "19 < Age <= 60",
+        "Not Heavy Duty",
+        "Not White Collar",
+        "Not Occupation Unknown"
+      ],
+      "51": [
+        "Not Single",
+        "Income > 76%",
+        "24 < Age <= 35",
+        "Not White Collar"
+      ],
+      "52": [
+        "Age > 35",
+        "Not Single",
+        "Income > 76%",
+        "Not White Collar"
+      ],
+      "53": [
+        "Not Single",
+        "Income > 76%",
+        "35 < Age <= 60",
+        "Not White Collar"
+      ],
+      "54": [
+        "Age > 60",
+        "Not Single",
+        "Income > 76%",
+        "Not White Collar"
+      ],
+      "55": [
+        "White Collar",
+        "24 < Age <= 60",
+        "66% < Income <= 72%"
+      ],
+      "56": [
+        "White Collar",
+        "Income > 72%",
+        "24 < Age <= 60"
+      ]
+    },
+    "Easy cash": {
+      "1": [
+        "Age <= 46"
+      ],
+      "2": [
+        "Age > 46"
+      ],
+      "3": [
+        "Age <= 46",
+        "Income <= 47%"
+      ],
+      "4": [
+        "Age <= 46",
+        "Income > 47%"
+      ],
+      "5": [
+        "Age > 46",
+        "Income <= 72%"
+      ],
+      "6": [
+        "Age > 46",
+        "Income > 72%"
+      ],
+      "7": [
+        "Age <= 21",
+        "Income > 47%"
+      ],
+      "8": [
+        "Income > 47%",
+        "21 < Age <= 46"
+      ],
+      "9": [
+        "Age > 46",
+        "Income <= 36%"
+      ],
+      "10": [
+        "Age > 46",
+        "36% < Income <= 72%"
+      ],
+      "11": [
+        "46 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "12": [
+        "Age > 59",
+        "36% < Income <= 72%"
+      ],
+      "13": [
+        "Age <= 7",
+        "Income <= 47%"
+      ],
+      "14": [
+        "7 < Age <= 46",
+        "Income <= 47%"
+      ],
+      "15": [
+        "Not Single",
+        "Income > 47%",
+        "21 < Age <= 46"
+      ],
+      "16": [
+        "Single",
+        "Income > 47%",
+        "21 < Age <= 46"
+      ],
+      "17": [
+        "7 < Age <= 46",
+        "Income <= 37%"
+      ],
+      "18": [
+        "7 < Age <= 46",
+        "37% < Income <= 47%"
+      ],
+      "19": [
+        "Income <= 36%",
+        "46 < Age <= 53"
+      ],
+      "20": [
+        "Age > 53",
+        "Income <= 36%"
+      ],
+      "21": [
+        "Not Single",
+        "46 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "22": [
+        "Single",
+        "46 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "23": [
+        "Not Single",
+        "21 < Age <= 46",
+        "47% < Income <= 76%"
+      ],
+      "24": [
+        "Not Single",
+        "Income > 76%",
+        "21 < Age <= 46"
+      ],
+      "25": [
+        "Not Single",
+        "46 < Age <= 49",
+        "36% < Income <= 72%"
+      ],
+      "26": [
+        "Not Single",
+        "49 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "27": [
+        "Not Single",
+        "7 < Age <= 46",
+        "Income <= 37%"
+      ],
+      "28": [
+        "Single",
+        "7 < Age <= 46",
+        "Income <= 37%"
+      ],
+      "29": [
+        "Single",
+        "7 < Age <= 20",
+        "Income <= 37%"
+      ],
+      "30": [
+        "Single",
+        "Income <= 37%",
+        "20 < Age <= 46"
+      ],
+      "31": [
+        "Income > 72%",
+        "46 < Age <= 50"
+      ],
+      "32": [
+        "Age > 50",
+        "Income > 72%"
+      ],
+      "33": [
+        "Age > 53",
+        "Not Single",
+        "Income <= 36%"
+      ],
+      "34": [
+        "Single",
+        "Age > 53",
+        "Income <= 36%"
+      ],
+      "35": [
+        "Not Single",
+        "7 < Age <= 46",
+        "37% < Income <= 47%"
+      ],
+      "36": [
+        "Single",
+        "7 < Age <= 46",
+        "37% < Income <= 47%"
+      ],
+      "37": [
+        "Single",
+        "7 < Age <= 46",
+        "Not Housewife",
+        "37% < Income <= 47%"
+      ],
+      "38": [
+        "Single",
+        "Housewife",
+        "7 < Age <= 46",
+        "37% < Income <= 47%"
+      ],
+      "39": [
+        "Not Single",
+        "21 < Age <= 46",
+        "Not White Collar",
+        "47% < Income <= 76%"
+      ],
+      "40": [
+        "Not Single",
+        "White Collar",
+        "21 < Age <= 46",
+        "47% < Income <= 76%"
+      ],
+      "41": [
+        "Not Single",
+        "Income > 76%",
+        "21 < Age <= 40"
+      ],
+      "42": [
+        "Not Single",
+        "Income > 76%",
+        "40 < Age <= 46"
+      ],
+      "43": [
+        "Not Single",
+        "49 < Age <= 59",
+        "36% < Income <= 66%"
+      ],
+      "44": [
+        "Not Single",
+        "49 < Age <= 59",
+        "66% < Income <= 72%"
+      ],
+      "45": [
+        "Single",
+        "Income > 47%",
+        "21 < Age <= 46",
+        "Not White Collar"
+      ],
+      "46": [
+        "Single",
+        "White Collar",
+        "Income > 47%",
+        "21 < Age <= 46"
+      ],
+      "47": [
+        "Single",
+        "7 < Age <= 22",
+        "Not Housewife",
+        "37% < Income <= 47%"
+      ],
+      "48": [
+        "Single",
+        "Not Housewife",
+        "22 < Age <= 46",
+        "37% < Income <= 47%"
+      ],
+      "49": [
+        "Single",
+        "Not Housewife",
+        "46 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "50": [
+        "Single",
+        "Housewife",
+        "46 < Age <= 59",
+        "36% < Income <= 72%"
+      ],
+      "51": [
+        "Not Single",
+        "Income <= 36%",
+        "46 < Age <= 53"
+      ],
+      "52": [
+        "Single",
+        "Income <= 36%",
+        "46 < Age <= 53"
+      ],
+      "53": [
+        "Not Single",
+        "White Collar",
+        "21 < Age <= 46",
+        "47% < Income <= 59%"
+      ],
+      "54": [
+        "Not Single",
+        "White Collar",
+        "21 < Age <= 46",
+        "59% < Income <= 76%"
+      ]
+    }
+  },
+  "infos": {
+    "Smart Protector": "29.86%",
+    "test": "0.33%",
+    "Protection Life": "2.67%",
+    "Universal Life": "1.1%",
+    "Example Product": "30%",
+    "Easy cash": "5.08%",
+    "MI ProductA": "",
+    "Perfect Health Solution": "4.38%",
+    "i-Wish": "1.4%",
+    "iProtect": "53.71%"
+  },
+  "trees": {
+    "Smart Protector": {
+      "name": "Smart Protector",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 499,
+      "children": [
+        {
+          "name": "Age <= 23",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 21.1% Predict: 0.733",
+          "sample": 210,
+          "posneg": 733,
+          "children": [
+            {
+              "name": "Age <= 13",
+              "parent": 1,
+              "self": 5,
+              "value": "Percent: 13.4% Predict: 0.784",
+              "sample": 133,
+              "posneg": 784,
+              "children": [
+                {
+                  "name": "Income <= 38%",
+                  "parent": 5,
+                  "self": 23,
+                  "value": "Percent: 3.6% Predict: 0.833",
+                  "sample": 36,
+                  "posneg": 832
+                },
+                {
+                  "name": "Income > 38%",
+                  "parent": 5,
+                  "self": 24,
+                  "value": "Percent: 9.8% Predict: 0.765",
+                  "sample": 97,
+                  "posneg": 765,
+                  "children": [
+                    {
+                      "name": "Not White Collar",
+                      "parent": 24,
+                      "self": 33,
+                      "value": "Percent: 9.2% Predict: 0.772",
+                      "sample": 91,
+                      "posneg": 772
+                    },
+                    {
+                      "name": "White Collar",
+                      "parent": 24,
+                      "self": 34,
+                      "value": "Percent: 0.6% Predict: 0.642",
+                      "sample": 5,
+                      "posneg": 641
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 13",
+              "parent": 1,
+              "self": 6,
+              "value": "Percent: 7.7% Predict: 0.632",
+              "sample": 76,
+              "posneg": 631
+            }
+          ]
+        },
+        {
+          "name": "Age > 23",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 78.9% Predict: 0.42",
+          "sample": 789,
+          "posneg": 419,
+          "children": [
+            {
+              "name": "Not White Collar",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 32.2% Predict: 0.473",
+              "sample": 321,
+              "posneg": 472,
+              "children": [
+                {
+                  "name": "Age <= 63",
+                  "parent": 3,
+                  "self": 13,
+                  "value": "Percent: 30.5% Predict: 0.464",
+                  "sample": 304,
+                  "posneg": 464,
+                  "children": [
+                    {
+                      "name": "Not Male",
+                      "parent": 13,
+                      "self": 19,
+                      "value": "Percent: 17.4% Predict: 0.439",
+                      "sample": 173,
+                      "posneg": 438,
+                      "children": [
+                        {
+                          "name": "Not Occupation Unknown",
+                          "parent": 19,
+                          "self": 31,
+                          "value": "Percent: 15.2% Predict: 0.448",
+                          "sample": 152,
+                          "posneg": 447,
+                          "children": [
+                            {
+                              "name": "Age <= 29",
+                              "parent": 31,
+                              "self": 45,
+                              "value": "Percent: 2.2% Predict: 0.502",
+                              "sample": 21,
+                              "posneg": 502
+                            },
+                            {
+                              "name": "Age > 29",
+                              "parent": 31,
+                              "self": 46,
+                              "value": "Percent: 13.1% Predict: 0.439",
+                              "sample": 130,
+                              "posneg": 438,
+                              "children": [
+                                {
+                                  "name": "Age <= 44",
+                                  "parent": 46,
+                                  "self": 47,
+                                  "value": "Percent: 6.8% Predict: 0.406",
+                                  "sample": 67,
+                                  "posneg": 406
+                                },
+                                {
+                                  "name": "Age > 44",
+                                  "parent": 46,
+                                  "self": 48,
+                                  "value": "Percent: 6.3% Predict: 0.472",
+                                  "sample": 62,
+                                  "posneg": 472,
+                                  "children": [
+                                    {
+                                      "name": "Income <= 77%",
+                                      "parent": 48,
+                                      "self": 49,
+                                      "value": "Percent: 5.6% Predict: 0.486",
+                                      "sample": 56,
+                                      "posneg": 485
+                                    },
+                                    {
+                                      "name": "Income > 77%",
+                                      "parent": 48,
+                                      "self": 50,
+                                      "value": "Percent: 0.6% Predict: 0.34",
+                                      "sample": 6,
+                                      "posneg": 339
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Occupation Unknown",
+                          "parent": 19,
+                          "self": 32,
+                          "value": "Percent: 2.2% Predict: 0.37",
+                          "sample": 21,
+                          "posneg": 369
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Male",
+                      "parent": 13,
+                      "self": 20,
+                      "value": "Percent: 13.1% Predict: 0.497",
+                      "sample": 130,
+                      "posneg": 497,
+                      "children": [
+                        {
+                          "name": "Not Rate-up",
+                          "parent": 20,
+                          "self": 27,
+                          "value": "Percent: 12.4% Predict: 0.504",
+                          "sample": 124,
+                          "posneg": 503,
+                          "children": [
+                            {
+                              "name": "Age <= 47",
+                              "parent": 27,
+                              "self": 35,
+                              "value": "Percent: 8.5% Predict: 0.485",
+                              "sample": 84,
+                              "posneg": 484
+                            },
+                            {
+                              "name": "Age > 47",
+                              "parent": 27,
+                              "self": 36,
+                              "value": "Percent: 3.9% Predict: 0.543",
+                              "sample": 39,
+                              "posneg": 543,
+                              "children": [
+                                {
+                                  "name": "Income <= 36%",
+                                  "parent": 36,
+                                  "self": 39,
+                                  "value": "Percent: 1.1% Predict: 0.614",
+                                  "sample": 11,
+                                  "posneg": 614
+                                },
+                                {
+                                  "name": "Income > 36%",
+                                  "parent": 36,
+                                  "self": 40,
+                                  "value": "Percent: 2.8% Predict: 0.513",
+                                  "sample": 28,
+                                  "posneg": 513
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Rate-up",
+                          "parent": 20,
+                          "self": 28,
+                          "value": "Percent: 0.7% Predict: 0.356",
+                          "sample": 6,
+                          "posneg": 356
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 63",
+                  "parent": 3,
+                  "self": 14,
+                  "value": "Percent: 1.7% Predict: 0.608",
+                  "sample": 16,
+                  "posneg": 608,
+                  "children": [
+                    {
+                      "name": "Income <= 75%",
+                      "parent": 14,
+                      "self": 25,
+                      "value": "Percent: 1.6% Predict: 0.629",
+                      "sample": 15,
+                      "posneg": 628,
+                      "children": [
+                        {
+                          "name": "Income <= 37%",
+                          "parent": 25,
+                          "self": 43,
+                          "value": "Percent: 0.6% Predict: 0.713",
+                          "sample": 5,
+                          "posneg": 712
+                        },
+                        {
+                          "name": "Income > 37%",
+                          "parent": 25,
+                          "self": 44,
+                          "value": "Percent: 1.0% Predict: 0.575",
+                          "sample": 9,
+                          "posneg": 575
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 75%",
+                      "parent": 14,
+                      "self": 26,
+                      "value": "Percent: 0.1% Predict: 0.234",
+                      "sample": 1,
+                      "posneg": 233
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White Collar",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 46.8% Predict: 0.381",
+              "sample": 467,
+              "posneg": 380,
+              "children": [
+                {
+                  "name": "Income <= 45%",
+                  "parent": 4,
+                  "self": 7,
+                  "value": "Percent: 27.3% Predict: 0.419",
+                  "sample": 273,
+                  "posneg": 418,
+                  "children": [
+                    {
+                      "name": "Not Male",
+                      "parent": 7,
+                      "self": 9,
+                      "value": "Percent: 19.2% Predict: 0.393",
+                      "sample": 191,
+                      "posneg": 392,
+                      "children": [
+                        {
+                          "name": "Age <= 29",
+                          "parent": 9,
+                          "self": 11,
+                          "value": "Percent: 4.0% Predict: 0.48",
+                          "sample": 39,
+                          "posneg": 480
+                        },
+                        {
+                          "name": "Age > 29",
+                          "parent": 9,
+                          "self": 12,
+                          "value": "Percent: 15.2% Predict: 0.368",
+                          "sample": 151,
+                          "posneg": 367,
+                          "children": [
+                            {
+                              "name": "Age <= 59",
+                              "parent": 12,
+                              "self": 17,
+                              "value": "Percent: 14.5% Predict: 0.357",
+                              "sample": 145,
+                              "posneg": 357,
+                              "children": [
+                                {
+                                  "name": "Income <= 29%",
+                                  "parent": 17,
+                                  "self": 41,
+                                  "value": "Percent: 4.8% Predict: 0.391",
+                                  "sample": 48,
+                                  "posneg": 391
+                                },
+                                {
+                                  "name": "Income > 29%",
+                                  "parent": 17,
+                                  "self": 42,
+                                  "value": "Percent: 9.7% Predict: 0.339",
+                                  "sample": 97,
+                                  "posneg": 339
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Age > 59",
+                              "parent": 12,
+                              "self": 18,
+                              "value": "Percent: 0.7% Predict: 0.561",
+                              "sample": 6,
+                              "posneg": 560
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Male",
+                      "parent": 7,
+                      "self": 10,
+                      "value": "Percent: 8.2% Predict: 0.477",
+                      "sample": 81,
+                      "posneg": 477,
+                      "children": [
+                        {
+                          "name": "Age <= 58",
+                          "parent": 10,
+                          "self": 29,
+                          "value": "Percent: 7.6% Predict: 0.466",
+                          "sample": 75,
+                          "posneg": 466
+                        },
+                        {
+                          "name": "Age > 58",
+                          "parent": 10,
+                          "self": 30,
+                          "value": "Percent: 0.6% Predict: 0.605",
+                          "sample": 5,
+                          "posneg": 605
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 45%",
+                  "parent": 4,
+                  "self": 8,
+                  "value": "Percent: 19.4% Predict: 0.323",
+                  "sample": 194,
+                  "posneg": 322,
+                  "children": [
+                    {
+                      "name": "Age <= 33",
+                      "parent": 8,
+                      "self": 15,
+                      "value": "Percent: 2.9% Predict: 0.418",
+                      "sample": 29,
+                      "posneg": 417
+                    },
+                    {
+                      "name": "Age > 33",
+                      "parent": 8,
+                      "self": 16,
+                      "value": "Percent: 16.5% Predict: 0.305",
+                      "sample": 164,
+                      "posneg": 304,
+                      "children": [
+                        {
+                          "name": "Not Male",
+                          "parent": 16,
+                          "self": 21,
+                          "value": "Percent: 10.7% Predict: 0.279",
+                          "sample": 107,
+                          "posneg": 279
+                        },
+                        {
+                          "name": "Male",
+                          "parent": 16,
+                          "self": 22,
+                          "value": "Percent: 5.7% Predict: 0.351",
+                          "sample": 57,
+                          "posneg": 350,
+                          "children": [
+                            {
+                              "name": "Income <= 73%",
+                              "parent": 22,
+                              "self": 37,
+                              "value": "Percent: 4.1% Predict: 0.376",
+                              "sample": 41,
+                              "posneg": 376
+                            },
+                            {
+                              "name": "Income > 73%",
+                              "parent": 22,
+                              "self": 38,
+                              "value": "Percent: 1.6% Predict: 0.28",
+                              "sample": 16,
+                              "posneg": 280
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "test": {
+      "name": "test",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 500,
+      "children": [
+        {
+          "name": "Age <= 49",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 76.4% Predict: 0.0",
+          "sample": 763,
+          "posneg": 0
+        },
+        {
+          "name": "Age > 49",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 23.6% Predict: 0.811",
+          "sample": 236,
+          "posneg": 810,
+          "children": [
+            {
+              "name": "Not Occupation Unknown",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 22.5% Predict: 0.818",
+              "sample": 225,
+              "posneg": 818,
+              "children": [
+                {
+                  "name": "Age <= 55",
+                  "parent": 3,
+                  "self": 5,
+                  "value": "Percent: 11.5% Predict: 0.729",
+                  "sample": 114,
+                  "posneg": 728,
+                  "children": [
+                    {
+                      "name": "Income <= 66%",
+                      "parent": 5,
+                      "self": 9,
+                      "value": "Percent: 9.4% Predict: 0.747",
+                      "sample": 94,
+                      "posneg": 747
+                    },
+                    {
+                      "name": "Income > 66%",
+                      "parent": 5,
+                      "self": 10,
+                      "value": "Percent: 2.0% Predict: 0.596",
+                      "sample": 20,
+                      "posneg": 596
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 55",
+                  "parent": 3,
+                  "self": 6,
+                  "value": "Percent: 11.1% Predict: 0.865",
+                  "sample": 110,
+                  "posneg": 864,
+                  "children": [
+                    {
+                      "name": "Age <= 59",
+                      "parent": 6,
+                      "self": 7,
+                      "value": "Percent: 6.0% Predict: 0.818",
+                      "sample": 59,
+                      "posneg": 818
+                    },
+                    {
+                      "name": "Age > 59",
+                      "parent": 6,
+                      "self": 8,
+                      "value": "Percent: 5.1% Predict: 0.896",
+                      "sample": 50,
+                      "posneg": 896
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Occupation Unknown",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 1.1% Predict: 0.0",
+              "sample": 10,
+              "posneg": 0
+            }
+          ]
+        }
+      ]
+    },
+    "Universal Life": {
+      "name": "Universal Life",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 500,
+      "children": [
+        {
+          "name": "Age <= 49",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 76.4% Predict: 0.43",
+          "sample": 763,
+          "posneg": 430,
+          "children": [
+            {
+              "name": "Income <= 38%",
+              "parent": 1,
+              "self": 7,
+              "value": "Percent: 31.6% Predict: 0.358",
+              "sample": 316,
+              "posneg": 358
+            },
+            {
+              "name": "Income > 38%",
+              "parent": 1,
+              "self": 8,
+              "value": "Percent: 44.7% Predict: 0.473",
+              "sample": 447,
+              "posneg": 472,
+              "children": [
+                {
+                  "name": "Income <= 71%",
+                  "parent": 8,
+                  "self": 9,
+                  "value": "Percent: 37.6% Predict: 0.498",
+                  "sample": 376,
+                  "posneg": 497,
+                  "children": [
+                    {
+                      "name": "Not Occupation Unknown",
+                      "parent": 9,
+                      "self": 11,
+                      "value": "Percent: 33.9% Predict: 0.515",
+                      "sample": 338,
+                      "posneg": 514,
+                      "children": [
+                        {
+                          "name": "Not Male",
+                          "parent": 11,
+                          "self": 17,
+                          "value": "Percent: 21.5% Predict: 0.546",
+                          "sample": 215,
+                          "posneg": 545
+                        },
+                        {
+                          "name": "Male",
+                          "parent": 11,
+                          "self": 18,
+                          "value": "Percent: 12.3% Predict: 0.45",
+                          "sample": 123,
+                          "posneg": 449
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Occupation Unknown",
+                      "parent": 9,
+                      "self": 12,
+                      "value": "Percent: 3.7% Predict: 0.259",
+                      "sample": 37,
+                      "posneg": 259
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 71%",
+                  "parent": 8,
+                  "self": 10,
+                  "value": "Percent: 7.1% Predict: 0.286",
+                  "sample": 71,
+                  "posneg": 286
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Age > 49",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 23.6% Predict: 0.643",
+          "sample": 236,
+          "posneg": 642,
+          "children": [
+            {
+              "name": "Age <= 65",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 22.0% Predict: 0.66",
+              "sample": 219,
+              "posneg": 659,
+              "children": [
+                {
+                  "name": "Not White Collar",
+                  "parent": 3,
+                  "self": 5,
+                  "value": "Percent: 8.7% Predict: 0.527",
+                  "sample": 86,
+                  "posneg": 526
+                },
+                {
+                  "name": "White Collar",
+                  "parent": 3,
+                  "self": 6,
+                  "value": "Percent: 13.3% Predict: 0.713",
+                  "sample": 132,
+                  "posneg": 712,
+                  "children": [
+                    {
+                      "name": "Income <= 76%",
+                      "parent": 6,
+                      "self": 13,
+                      "value": "Percent: 12.0% Predict: 0.73",
+                      "sample": 120,
+                      "posneg": 729,
+                      "children": [
+                        {
+                          "name": "Income <= 51%",
+                          "parent": 13,
+                          "self": 15,
+                          "value": "Percent: 5.7% Predict: 0.65",
+                          "sample": 56,
+                          "posneg": 649
+                        },
+                        {
+                          "name": "Income > 51%",
+                          "parent": 13,
+                          "self": 16,
+                          "value": "Percent: 6.4% Predict: 0.776",
+                          "sample": 63,
+                          "posneg": 776
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 76%",
+                      "parent": 6,
+                      "self": 14,
+                      "value": "Percent: 1.2% Predict: 0.312",
+                      "sample": 12,
+                      "posneg": 311
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 65",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 1.6% Predict: 0.0",
+              "sample": 16,
+              "posneg": 0
+            }
+          ]
+        }
+      ]
+    },
+    "Protection Life": {
+      "name": "Protection Life",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 500,
+      "children": [
+        {
+          "name": "Age <= 19",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 16.6% Predict: 0.0",
+          "sample": 165,
+          "posneg": 0
+        },
+        {
+          "name": "Age > 19",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 83.4% Predict: 0.547",
+          "sample": 834,
+          "posneg": 546,
+          "children": [
+            {
+              "name": "Age <= 50",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 61.8% Predict: 0.598",
+              "sample": 617,
+              "posneg": 598,
+              "children": [
+                {
+                  "name": "Income <= 13%",
+                  "parent": 3,
+                  "self": 9,
+                  "value": "Percent: 7.3% Predict: 0.716",
+                  "sample": 72,
+                  "posneg": 715,
+                  "children": [
+                    {
+                      "name": "Not Heavy Duty",
+                      "parent": 9,
+                      "self": 23,
+                      "value": "Percent: 6.4% Predict: 0.698",
+                      "sample": 63,
+                      "posneg": 697,
+                      "children": [
+                        {
+                          "name": "Age <= 23",
+                          "parent": 23,
+                          "self": 25,
+                          "value": "Percent: 0.7% Predict: 0.8",
+                          "sample": 6,
+                          "posneg": 799
+                        },
+                        {
+                          "name": "Age > 23",
+                          "parent": 23,
+                          "self": 26,
+                          "value": "Percent: 5.7% Predict: 0.679",
+                          "sample": 57,
+                          "posneg": 678
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Heavy Duty",
+                      "parent": 9,
+                      "self": 24,
+                      "value": "Percent: 0.9% Predict: 0.807",
+                      "sample": 8,
+                      "posneg": 806
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 13%",
+                  "parent": 3,
+                  "self": 10,
+                  "value": "Percent: 54.5% Predict: 0.576",
+                  "sample": 545,
+                  "posneg": 575,
+                  "children": [
+                    {
+                      "name": "Not White Collar",
+                      "parent": 10,
+                      "self": 11,
+                      "value": "Percent: 23.3% Predict: 0.63",
+                      "sample": 232,
+                      "posneg": 629,
+                      "children": [
+                        {
+                          "name": "Age <= 37",
+                          "parent": 11,
+                          "self": 29,
+                          "value": "Percent: 12.6% Predict: 0.651",
+                          "sample": 126,
+                          "posneg": 650,
+                          "children": [
+                            {
+                              "name": "Income <= 67%",
+                              "parent": 29,
+                              "self": 31,
+                              "value": "Percent: 10.8% Predict: 0.631",
+                              "sample": 107,
+                              "posneg": 631,
+                              "children": [
+                                {
+                                  "name": "Income <= 50%",
+                                  "parent": 31,
+                                  "self": 47,
+                                  "value": "Percent: 8.6% Predict: 0.643",
+                                  "sample": 86,
+                                  "posneg": 643
+                                },
+                                {
+                                  "name": "Income > 50%",
+                                  "parent": 31,
+                                  "self": 48,
+                                  "value": "Percent: 2.1% Predict: 0.574",
+                                  "sample": 21,
+                                  "posneg": 573
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Income > 67%",
+                              "parent": 29,
+                              "self": 32,
+                              "value": "Percent: 1.9% Predict: 0.735",
+                              "sample": 18,
+                              "posneg": 734
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 37",
+                          "parent": 11,
+                          "self": 30,
+                          "value": "Percent: 10.7% Predict: 0.601",
+                          "sample": 106,
+                          "posneg": 601,
+                          "children": [
+                            {
+                              "name": "Not Heavy Duty",
+                              "parent": 30,
+                              "self": 33,
+                              "value": "Percent: 8.7% Predict: 0.581",
+                              "sample": 86,
+                              "posneg": 581
+                            },
+                            {
+                              "name": "Heavy Duty",
+                              "parent": 30,
+                              "self": 34,
+                              "value": "Percent: 2.0% Predict: 0.672",
+                              "sample": 19,
+                              "posneg": 672
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "White Collar",
+                      "parent": 10,
+                      "self": 12,
+                      "value": "Percent: 31.2% Predict: 0.525",
+                      "sample": 312,
+                      "posneg": 524,
+                      "children": [
+                        {
+                          "name": "Age <= 36",
+                          "parent": 12,
+                          "self": 13,
+                          "value": "Percent: 15.7% Predict: 0.575",
+                          "sample": 157,
+                          "posneg": 575,
+                          "children": [
+                            {
+                              "name": "Income <= 66%",
+                              "parent": 13,
+                              "self": 15,
+                              "value": "Percent: 13.7% Predict: 0.546",
+                              "sample": 137,
+                              "posneg": 546,
+                              "children": [
+                                {
+                                  "name": "Not Male",
+                                  "parent": 15,
+                                  "self": 35,
+                                  "value": "Percent: 9.8% Predict: 0.524",
+                                  "sample": 98,
+                                  "posneg": 523,
+                                  "children": [
+                                    {
+                                      "name": "Age <= 23",
+                                      "parent": 35,
+                                      "self": 37,
+                                      "value": "Percent: 0.9% Predict: 0.642",
+                                      "sample": 9,
+                                      "posneg": 642
+                                    },
+                                    {
+                                      "name": "Age > 23",
+                                      "parent": 35,
+                                      "self": 38,
+                                      "value": "Percent: 8.9% Predict: 0.507",
+                                      "sample": 88,
+                                      "posneg": 506
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Male",
+                                  "parent": 15,
+                                  "self": 36,
+                                  "value": "Percent: 3.9% Predict: 0.595",
+                                  "sample": 39,
+                                  "posneg": 595
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Income > 66%",
+                              "parent": 13,
+                              "self": 16,
+                              "value": "Percent: 2.0% Predict: 0.707",
+                              "sample": 19,
+                              "posneg": 706
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 36",
+                          "parent": 12,
+                          "self": 14,
+                          "value": "Percent: 15.5% Predict: 0.46",
+                          "sample": 155,
+                          "posneg": 460,
+                          "children": [
+                            {
+                              "name": "Income <= 71%",
+                              "parent": 14,
+                              "self": 19,
+                              "value": "Percent: 13.4% Predict: 0.439",
+                              "sample": 134,
+                              "posneg": 438,
+                              "children": [
+                                {
+                                  "name": "Age <= 42",
+                                  "parent": 19,
+                                  "self": 41,
+                                  "value": "Percent: 6.5% Predict: 0.473",
+                                  "sample": 64,
+                                  "posneg": 472
+                                },
+                                {
+                                  "name": "Age > 42",
+                                  "parent": 19,
+                                  "self": 42,
+                                  "value": "Percent: 7.0% Predict: 0.404",
+                                  "sample": 69,
+                                  "posneg": 403
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Income > 71%",
+                              "parent": 14,
+                              "self": 20,
+                              "value": "Percent: 2.1% Predict: 0.568",
+                              "sample": 20,
+                              "posneg": 568
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 50",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 21.6% Predict: 0.294",
+              "sample": 216,
+              "posneg": 294,
+              "children": [
+                {
+                  "name": "Age <= 59",
+                  "parent": 4,
+                  "self": 5,
+                  "value": "Percent: 16.2% Predict: 0.358",
+                  "sample": 162,
+                  "posneg": 358,
+                  "children": [
+                    {
+                      "name": "Not White Collar",
+                      "parent": 5,
+                      "self": 7,
+                      "value": "Percent: 5.6% Predict: 0.501",
+                      "sample": 56,
+                      "posneg": 501,
+                      "children": [
+                        {
+                          "name": "Income <= 14%",
+                          "parent": 7,
+                          "self": 43,
+                          "value": "Percent: 0.6% Predict: 0.624",
+                          "sample": 5,
+                          "posneg": 623
+                        },
+                        {
+                          "name": "Income > 14%",
+                          "parent": 7,
+                          "self": 44,
+                          "value": "Percent: 5.0% Predict: 0.483",
+                          "sample": 50,
+                          "posneg": 482,
+                          "children": [
+                            {
+                              "name": "Age <= 54",
+                              "parent": 44,
+                              "self": 45,
+                              "value": "Percent: 2.6% Predict: 0.525",
+                              "sample": 26,
+                              "posneg": 524
+                            },
+                            {
+                              "name": "Age > 54",
+                              "parent": 44,
+                              "self": 46,
+                              "value": "Percent: 2.4% Predict: 0.429",
+                              "sample": 24,
+                              "posneg": 428
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "White Collar",
+                      "parent": 5,
+                      "self": 8,
+                      "value": "Percent: 10.6% Predict: 0.246",
+                      "sample": 106,
+                      "posneg": 245,
+                      "children": [
+                        {
+                          "name": "Income <= 42%",
+                          "parent": 8,
+                          "self": 17,
+                          "value": "Percent: 3.5% Predict: 0.364",
+                          "sample": 34,
+                          "posneg": 364,
+                          "children": [
+                            {
+                              "name": "Not Male",
+                              "parent": 17,
+                              "self": 21,
+                              "value": "Percent: 2.3% Predict: 0.277",
+                              "sample": 22,
+                              "posneg": 276,
+                              "children": [
+                                {
+                                  "name": "Income <= 19%",
+                                  "parent": 21,
+                                  "self": 39,
+                                  "value": "Percent: 0.5% Predict: 0.44",
+                                  "sample": 4,
+                                  "posneg": 440
+                                },
+                                {
+                                  "name": "Income > 19%",
+                                  "parent": 21,
+                                  "self": 40,
+                                  "value": "Percent: 1.8% Predict: 0.218",
+                                  "sample": 18,
+                                  "posneg": 218
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Male",
+                              "parent": 17,
+                              "self": 22,
+                              "value": "Percent: 1.2% Predict: 0.486",
+                              "sample": 11,
+                              "posneg": 486
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Income > 42%",
+                          "parent": 8,
+                          "self": 18,
+                          "value": "Percent: 7.1% Predict: 0.171",
+                          "sample": 71,
+                          "posneg": 171,
+                          "children": [
+                            {
+                              "name": "Income <= 79%",
+                              "parent": 18,
+                              "self": 27,
+                              "value": "Percent: 6.6% Predict: 0.149",
+                              "sample": 65,
+                              "posneg": 148
+                            },
+                            {
+                              "name": "Income > 79%",
+                              "parent": 18,
+                              "self": 28,
+                              "value": "Percent: 0.6% Predict: 0.362",
+                              "sample": 5,
+                              "posneg": 362
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 59",
+                  "parent": 4,
+                  "self": 6,
+                  "value": "Percent: 5.4% Predict: 0.0",
+                  "sample": 54,
+                  "posneg": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Example Product": {
+      "name": "Example Product",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 499,
+      "children": [
+        {
+          "name": "Income <= 39%",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 55.3% Predict: 0.58",
+          "sample": 552,
+          "posneg": 579,
+          "children": [
+            {
+              "name": "Age <= 33",
+              "parent": 1,
+              "self": 3,
+              "value": "Percent: 27.7% Predict: 0.651",
+              "sample": 276,
+              "posneg": 651,
+              "children": [
+                {
+                  "name": "Income <= 26%",
+                  "parent": 3,
+                  "self": 11,
+                  "value": "Percent: 8.6% Predict: 0.723",
+                  "sample": 86,
+                  "posneg": 722,
+                  "children": [
+                    {
+                      "name": "Income <= 21%",
+                      "parent": 11,
+                      "self": 13,
+                      "value": "Percent: 6.7% Predict: 0.642",
+                      "sample": 66,
+                      "posneg": 641,
+                      "children": [
+                        {
+                          "name": "Not Blue Collar",
+                          "parent": 13,
+                          "self": 29,
+                          "value": "Percent: 5.7% Predict: 0.663",
+                          "sample": 56,
+                          "posneg": 662,
+                          "children": [
+                            {
+                              "name": "Not Single",
+                              "parent": 29,
+                              "self": 55,
+                              "value": "Percent: 1.6% Predict: 0.556",
+                              "sample": 15,
+                              "posneg": 556
+                            },
+                            {
+                              "name": "Single",
+                              "parent": 29,
+                              "self": 56,
+                              "value": "Percent: 4.1% Predict: 0.691",
+                              "sample": 41,
+                              "posneg": 690
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Blue Collar",
+                          "parent": 13,
+                          "self": 30,
+                          "value": "Percent: 1.0% Predict: 0.435",
+                          "sample": 9,
+                          "posneg": 435
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 21%",
+                      "parent": 11,
+                      "self": 14,
+                      "value": "Percent: 2.0% Predict: 0.845",
+                      "sample": 19,
+                      "posneg": 845
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 26%",
+                  "parent": 3,
+                  "self": 12,
+                  "value": "Percent: 19.0% Predict: 0.605",
+                  "sample": 190,
+                  "posneg": 605,
+                  "children": [
+                    {
+                      "name": "Not Single",
+                      "parent": 12,
+                      "self": 19,
+                      "value": "Percent: 3.7% Predict: 0.474",
+                      "sample": 36,
+                      "posneg": 473,
+                      "children": [
+                        {
+                          "name": "Not Blue Collar",
+                          "parent": 19,
+                          "self": 21,
+                          "value": "Percent: 3.0% Predict: 0.522",
+                          "sample": 30,
+                          "posneg": 521
+                        },
+                        {
+                          "name": "Blue Collar",
+                          "parent": 19,
+                          "self": 22,
+                          "value": "Percent: 0.6% Predict: 0.0",
+                          "sample": 6,
+                          "posneg": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Single",
+                      "parent": 12,
+                      "self": 20,
+                      "value": "Percent: 15.4% Predict: 0.628",
+                      "sample": 153,
+                      "posneg": 627
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 33",
+              "parent": 1,
+              "self": 4,
+              "value": "Percent: 27.6% Predict: 0.472",
+              "sample": 276,
+              "posneg": 472,
+              "children": [
+                {
+                  "name": "Not Rate-up",
+                  "parent": 4,
+                  "self": 7,
+                  "value": "Percent: 27.3% Predict: 0.453",
+                  "sample": 273,
+                  "posneg": 452,
+                  "children": [
+                    {
+                      "name": "Not White Collar",
+                      "parent": 7,
+                      "self": 9,
+                      "value": "Percent: 12.9% Predict: 0.319",
+                      "sample": 129,
+                      "posneg": 318,
+                      "children": [
+                        {
+                          "name": "Age <= 65",
+                          "parent": 9,
+                          "self": 31,
+                          "value": "Percent: 12.2% Predict: 0.332",
+                          "sample": 121,
+                          "posneg": 331,
+                          "children": [
+                            {
+                              "name": "Not Male",
+                              "parent": 31,
+                              "self": 41,
+                              "value": "Percent: 7.0% Predict: 0.277",
+                              "sample": 70,
+                              "posneg": 276
+                            },
+                            {
+                              "name": "Male",
+                              "parent": 31,
+                              "self": 42,
+                              "value": "Percent: 5.1% Predict: 0.395",
+                              "sample": 51,
+                              "posneg": 395
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 65",
+                          "parent": 9,
+                          "self": 32,
+                          "value": "Percent: 0.7% Predict: 0.0",
+                          "sample": 7,
+                          "posneg": 0
+                        }
+                      ]
+                    },
+                    {
+                      "name": "White Collar",
+                      "parent": 7,
+                      "self": 10,
+                      "value": "Percent: 14.4% Predict: 0.535",
+                      "sample": 143,
+                      "posneg": 534,
+                      "children": [
+                        {
+                          "name": "Income <= 30%",
+                          "parent": 10,
+                          "self": 15,
+                          "value": "Percent: 9.8% Predict: 0.462",
+                          "sample": 97,
+                          "posneg": 462,
+                          "children": [
+                            {
+                              "name": "Age <= 43",
+                              "parent": 15,
+                              "self": 23,
+                              "value": "Percent: 5.3% Predict: 0.526",
+                              "sample": 52,
+                              "posneg": 525
+                            },
+                            {
+                              "name": "Age > 43",
+                              "parent": 15,
+                              "self": 24,
+                              "value": "Percent: 4.5% Predict: 0.362",
+                              "sample": 44,
+                              "posneg": 361
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Income > 30%",
+                          "parent": 10,
+                          "self": 16,
+                          "value": "Percent: 4.6% Predict: 0.639",
+                          "sample": 46,
+                          "posneg": 638,
+                          "children": [
+                            {
+                              "name": "Age <= 63",
+                              "parent": 16,
+                              "self": 43,
+                              "value": "Percent: 4.5% Predict: 0.647",
+                              "sample": 44,
+                              "posneg": 646
+                            },
+                            {
+                              "name": "Age > 63",
+                              "parent": 16,
+                              "self": 44,
+                              "value": "Percent: 0.2% Predict: 0.0",
+                              "sample": 1,
+                              "posneg": 0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Rate-up",
+                  "parent": 4,
+                  "self": 8,
+                  "value": "Percent: 0.3% Predict: 0.881",
+                  "sample": 2,
+                  "posneg": 880
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Income > 39%",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 44.7% Predict: 0.348",
+          "sample": 447,
+          "posneg": 347,
+          "children": [
+            {
+              "name": "Age <= 29",
+              "parent": 2,
+              "self": 5,
+              "value": "Percent: 10.2% Predict: 0.492",
+              "sample": 102,
+              "posneg": 492,
+              "children": [
+                {
+                  "name": "Income <= 64%",
+                  "parent": 5,
+                  "self": 25,
+                  "value": "Percent: 6.8% Predict: 0.537",
+                  "sample": 67,
+                  "posneg": 536,
+                  "children": [
+                    {
+                      "name": "Age <= 1",
+                      "parent": 25,
+                      "self": 53,
+                      "value": "Percent: 0.9% Predict: 0.664",
+                      "sample": 8,
+                      "posneg": 663
+                    },
+                    {
+                      "name": "Age > 1",
+                      "parent": 25,
+                      "self": 54,
+                      "value": "Percent: 5.9% Predict: 0.509",
+                      "sample": 58,
+                      "posneg": 509
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 64%",
+                  "parent": 5,
+                  "self": 26,
+                  "value": "Percent: 3.5% Predict: 0.377",
+                  "sample": 34,
+                  "posneg": 376,
+                  "children": [
+                    {
+                      "name": "Not Single",
+                      "parent": 26,
+                      "self": 49,
+                      "value": "Percent: 0.7% Predict: 0.13",
+                      "sample": 6,
+                      "posneg": 130
+                    },
+                    {
+                      "name": "Single",
+                      "parent": 26,
+                      "self": 50,
+                      "value": "Percent: 2.8% Predict: 0.416",
+                      "sample": 28,
+                      "posneg": 416
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 29",
+              "parent": 2,
+              "self": 6,
+              "value": "Percent: 34.5% Predict: 0.288",
+              "sample": 345,
+              "posneg": 288,
+              "children": [
+                {
+                  "name": "Income <= 65%",
+                  "parent": 6,
+                  "self": 17,
+                  "value": "Percent: 22.5% Predict: 0.33",
+                  "sample": 225,
+                  "posneg": 329,
+                  "children": [
+                    {
+                      "name": "Not Married",
+                      "parent": 17,
+                      "self": 27,
+                      "value": "Percent: 6.0% Predict: 0.411",
+                      "sample": 60,
+                      "posneg": 410,
+                      "children": [
+                        {
+                          "name": "Age <= 36",
+                          "parent": 27,
+                          "self": 45,
+                          "value": "Percent: 1.6% Predict: 0.523",
+                          "sample": 15,
+                          "posneg": 523
+                        },
+                        {
+                          "name": "Age > 36",
+                          "parent": 27,
+                          "self": 46,
+                          "value": "Percent: 4.5% Predict: 0.359",
+                          "sample": 44,
+                          "posneg": 358,
+                          "children": [
+                            {
+                              "name": "Age <= 43",
+                              "parent": 46,
+                              "self": 47,
+                              "value": "Percent: 1.3% Predict: 0.182",
+                              "sample": 13,
+                              "posneg": 181
+                            },
+                            {
+                              "name": "Age > 43",
+                              "parent": 46,
+                              "self": 48,
+                              "value": "Percent: 3.1% Predict: 0.413",
+                              "sample": 31,
+                              "posneg": 413
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Married",
+                      "parent": 17,
+                      "self": 28,
+                      "value": "Percent: 16.5% Predict: 0.294",
+                      "sample": 165,
+                      "posneg": 294,
+                      "children": [
+                        {
+                          "name": "Not White Collar",
+                          "parent": 28,
+                          "self": 33,
+                          "value": "Percent: 6.1% Predict: 0.217",
+                          "sample": 61,
+                          "posneg": 217,
+                          "children": [
+                            {
+                              "name": "Age <= 52",
+                              "parent": 33,
+                              "self": 35,
+                              "value": "Percent: 4.6% Predict: 0.155",
+                              "sample": 46,
+                              "posneg": 155
+                            },
+                            {
+                              "name": "Age > 52",
+                              "parent": 33,
+                              "self": 36,
+                              "value": "Percent: 1.5% Predict: 0.362",
+                              "sample": 14,
+                              "posneg": 361,
+                              "children": [
+                                {
+                                  "name": "Income <= 59%",
+                                  "parent": 36,
+                                  "self": 51,
+                                  "value": "Percent: 1.2% Predict: 0.256",
+                                  "sample": 11,
+                                  "posneg": 256
+                                },
+                                {
+                                  "name": "Income > 59%",
+                                  "parent": 36,
+                                  "self": 52,
+                                  "value": "Percent: 0.3% Predict: 0.571",
+                                  "sample": 3,
+                                  "posneg": 570
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "White Collar",
+                          "parent": 28,
+                          "self": 34,
+                          "value": "Percent: 10.4% Predict: 0.333",
+                          "sample": 104,
+                          "posneg": 332,
+                          "children": [
+                            {
+                              "name": "Age <= 49",
+                              "parent": 34,
+                              "self": 37,
+                              "value": "Percent: 5.5% Predict: 0.388",
+                              "sample": 55,
+                              "posneg": 388
+                            },
+                            {
+                              "name": "Age > 49",
+                              "parent": 34,
+                              "self": 38,
+                              "value": "Percent: 4.9% Predict: 0.257",
+                              "sample": 48,
+                              "posneg": 257,
+                              "children": [
+                                {
+                                  "name": "Age <= 60",
+                                  "parent": 38,
+                                  "self": 39,
+                                  "value": "Percent: 4.6% Predict: 0.215",
+                                  "sample": 45,
+                                  "posneg": 214
+                                },
+                                {
+                                  "name": "Age > 60",
+                                  "parent": 38,
+                                  "self": 40,
+                                  "value": "Percent: 0.3% Predict: 0.573",
+                                  "sample": 3,
+                                  "posneg": 572
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 65%",
+                  "parent": 6,
+                  "self": 18,
+                  "value": "Percent: 12.0% Predict: 0.195",
+                  "sample": 119,
+                  "posneg": 194
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "iProtect": {
+      "name": "iProtect",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 499,
+      "children": [
+        {
+          "name": "Age <= 23",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 21.1% Predict: 0.27",
+          "sample": 210,
+          "posneg": 269,
+          "children": [
+            {
+              "name": "Age <= 11",
+              "parent": 1,
+              "self": 5,
+              "value": "Percent: 12.5% Predict: 0.197",
+              "sample": 124,
+              "posneg": 196,
+              "children": [
+                {
+                  "name": "Age <= 2",
+                  "parent": 5,
+                  "self": 19,
+                  "value": "Percent: 5.7% Predict: 0.163",
+                  "sample": 57,
+                  "posneg": 162
+                },
+                {
+                  "name": "Age > 2",
+                  "parent": 5,
+                  "self": 20,
+                  "value": "Percent: 6.8% Predict: 0.226",
+                  "sample": 67,
+                  "posneg": 225
+                }
+              ]
+            },
+            {
+              "name": "Age > 11",
+              "parent": 1,
+              "self": 6,
+              "value": "Percent: 8.6% Predict: 0.38",
+              "sample": 86,
+              "posneg": 379
+            }
+          ]
+        },
+        {
+          "name": "Age > 23",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 78.9% Predict: 0.565",
+          "sample": 789,
+          "posneg": 565,
+          "children": [
+            {
+              "name": "Age <= 59",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 73.5% Predict: 0.579",
+              "sample": 735,
+              "posneg": 578,
+              "children": [
+                {
+                  "name": "Income <= 71%",
+                  "parent": 3,
+                  "self": 7,
+                  "value": "Percent: 63.9% Predict: 0.594",
+                  "sample": 639,
+                  "posneg": 594,
+                  "children": [
+                    {
+                      "name": "Not Male",
+                      "parent": 7,
+                      "self": 9,
+                      "value": "Percent: 41.5% Predict: 0.618",
+                      "sample": 415,
+                      "posneg": 618,
+                      "children": [
+                        {
+                          "name": "Age <= 29",
+                          "parent": 9,
+                          "self": 11,
+                          "value": "Percent: 6.9% Predict: 0.531",
+                          "sample": 69,
+                          "posneg": 531,
+                          "children": [
+                            {
+                              "name": "Age <= 26",
+                              "parent": 11,
+                              "self": 29,
+                              "value": "Percent: 3.4% Predict: 0.496",
+                              "sample": 34,
+                              "posneg": 496
+                            },
+                            {
+                              "name": "Age > 26",
+                              "parent": 11,
+                              "self": 30,
+                              "value": "Percent: 3.5% Predict: 0.565",
+                              "sample": 35,
+                              "posneg": 565
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 29",
+                          "parent": 9,
+                          "self": 12,
+                          "value": "Percent: 34.6% Predict: 0.636",
+                          "sample": 346,
+                          "posneg": 635,
+                          "children": [
+                            {
+                              "name": "Not White Collar",
+                              "parent": 12,
+                              "self": 13,
+                              "value": "Percent: 11.8% Predict: 0.587",
+                              "sample": 118,
+                              "posneg": 586,
+                              "children": [
+                                {
+                                  "name": "Age <= 47",
+                                  "parent": 13,
+                                  "self": 17,
+                                  "value": "Percent: 7.8% Predict: 0.612",
+                                  "sample": 77,
+                                  "posneg": 612
+                                },
+                                {
+                                  "name": "Age > 47",
+                                  "parent": 13,
+                                  "self": 18,
+                                  "value": "Percent: 4.0% Predict: 0.538",
+                                  "sample": 40,
+                                  "posneg": 538
+                                }
+                              ]
+                            },
+                            {
+                              "name": "White Collar",
+                              "parent": 12,
+                              "self": 14,
+                              "value": "Percent: 22.8% Predict: 0.662",
+                              "sample": 228,
+                              "posneg": 661
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Male",
+                      "parent": 7,
+                      "self": 10,
+                      "value": "Percent: 22.4% Predict: 0.551",
+                      "sample": 223,
+                      "posneg": 550,
+                      "children": [
+                        {
+                          "name": "Not Blue Collar",
+                          "parent": 10,
+                          "self": 21,
+                          "value": "Percent: 17.2% Predict: 0.563",
+                          "sample": 171,
+                          "posneg": 562,
+                          "children": [
+                            {
+                              "name": "Age <= 29",
+                              "parent": 21,
+                              "self": 23,
+                              "value": "Percent: 2.6% Predict: 0.508",
+                              "sample": 25,
+                              "posneg": 508
+                            },
+                            {
+                              "name": "Age > 29",
+                              "parent": 21,
+                              "self": 24,
+                              "value": "Percent: 14.6% Predict: 0.572",
+                              "sample": 146,
+                              "posneg": 572
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Blue Collar",
+                          "parent": 10,
+                          "self": 22,
+                          "value": "Percent: 5.2% Predict: 0.511",
+                          "sample": 51,
+                          "posneg": 511,
+                          "children": [
+                            {
+                              "name": "Age <= 48",
+                              "parent": 22,
+                              "self": 27,
+                              "value": "Percent: 4.0% Predict: 0.534",
+                              "sample": 39,
+                              "posneg": 533
+                            },
+                            {
+                              "name": "Age > 48",
+                              "parent": 22,
+                              "self": 28,
+                              "value": "Percent: 1.2% Predict: 0.44",
+                              "sample": 12,
+                              "posneg": 440
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 71%",
+                  "parent": 3,
+                  "self": 8,
+                  "value": "Percent: 9.6% Predict: 0.477",
+                  "sample": 96,
+                  "posneg": 477,
+                  "children": [
+                    {
+                      "name": "Income <= 81%",
+                      "parent": 8,
+                      "self": 25,
+                      "value": "Percent: 6.4% Predict: 0.499",
+                      "sample": 63,
+                      "posneg": 498
+                    },
+                    {
+                      "name": "Income > 81%",
+                      "parent": 8,
+                      "self": 26,
+                      "value": "Percent: 3.2% Predict: 0.435",
+                      "sample": 32,
+                      "posneg": 435,
+                      "children": [
+                        {
+                          "name": "Income <= 86%",
+                          "parent": 26,
+                          "self": 31,
+                          "value": "Percent: 1.6% Predict: 0.387",
+                          "sample": 16,
+                          "posneg": 387
+                        },
+                        {
+                          "name": "Income > 86%",
+                          "parent": 26,
+                          "self": 32,
+                          "value": "Percent: 1.6% Predict: 0.485",
+                          "sample": 15,
+                          "posneg": 485
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Age > 59",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 5.4% Predict: 0.389",
+              "sample": 54,
+              "posneg": 389,
+              "children": [
+                {
+                  "name": "Age <= 63",
+                  "parent": 4,
+                  "self": 15,
+                  "value": "Percent: 2.8% Predict: 0.441",
+                  "sample": 28,
+                  "posneg": 440
+                },
+                {
+                  "name": "Age > 63",
+                  "parent": 4,
+                  "self": 16,
+                  "value": "Percent: 2.6% Predict: 0.334",
+                  "sample": 25,
+                  "posneg": 334
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "MI ProductA": {
+      "name": "MI ProductA",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 500,
+      "children": [
+        {
+          "name": "Age <= 15",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 13.9% Predict: 0.829",
+          "sample": 139,
+          "posneg": 829,
+          "children": [
+            {
+              "name": "Age <= 7",
+              "parent": 1,
+              "self": 9,
+              "value": "Percent: 9.8% Predict: 0.849",
+              "sample": 97,
+              "posneg": 849,
+              "children": [
+                {
+                  "name": "Income <= 80%",
+                  "parent": 9,
+                  "self": 13,
+                  "value": "Percent: 9.4% Predict: 0.853",
+                  "sample": 94,
+                  "posneg": 852
+                },
+                {
+                  "name": "Income > 80%",
+                  "parent": 9,
+                  "self": 14,
+                  "value": "Percent: 0.3% Predict: 0.532",
+                  "sample": 3,
+                  "posneg": 532
+                }
+              ]
+            },
+            {
+              "name": "Age > 7",
+              "parent": 1,
+              "self": 10,
+              "value": "Percent: 4.1% Predict: 0.753",
+              "sample": 41,
+              "posneg": 753,
+              "children": [
+                {
+                  "name": "Age <= 13",
+                  "parent": 10,
+                  "self": 29,
+                  "value": "Percent: 3.2% Predict: 0.776",
+                  "sample": 32,
+                  "posneg": 775
+                },
+                {
+                  "name": "Age > 13",
+                  "parent": 10,
+                  "self": 30,
+                  "value": "Percent: 0.9% Predict: 0.609",
+                  "sample": 8,
+                  "posneg": 608
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Age > 15",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 86.1% Predict: 0.281",
+          "sample": 860,
+          "posneg": 280,
+          "children": [
+            {
+              "name": "Income <= 47%",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 54.5% Predict: 0.335",
+              "sample": 544,
+              "posneg": 334,
+              "children": [
+                {
+                  "name": "Age <= 27",
+                  "parent": 3,
+                  "self": 7,
+                  "value": "Percent: 11.3% Predict: 0.427",
+                  "sample": 112,
+                  "posneg": 427,
+                  "children": [
+                    {
+                      "name": "Income <= 22%",
+                      "parent": 7,
+                      "self": 23,
+                      "value": "Percent: 3.5% Predict: 0.5",
+                      "sample": 34,
+                      "posneg": 499
+                    },
+                    {
+                      "name": "Income > 22%",
+                      "parent": 7,
+                      "self": 24,
+                      "value": "Percent: 7.8% Predict: 0.388",
+                      "sample": 78,
+                      "posneg": 387
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 27",
+                  "parent": 3,
+                  "self": 8,
+                  "value": "Percent: 43.2% Predict: 0.305",
+                  "sample": 432,
+                  "posneg": 305,
+                  "children": [
+                    {
+                      "name": "Not Married",
+                      "parent": 8,
+                      "self": 11,
+                      "value": "Percent: 14.9% Predict: 0.361",
+                      "sample": 148,
+                      "posneg": 360,
+                      "children": [
+                        {
+                          "name": "Income <= 42%",
+                          "parent": 11,
+                          "self": 21,
+                          "value": "Percent: 14.2% Predict: 0.37",
+                          "sample": 142,
+                          "posneg": 369,
+                          "children": [
+                            {
+                              "name": "Age <= 65",
+                              "parent": 21,
+                              "self": 27,
+                              "value": "Percent: 13.8% Predict: 0.376",
+                              "sample": 138,
+                              "posneg": 376,
+                              "children": [
+                                {
+                                  "name": "Not Housewife",
+                                  "parent": 27,
+                                  "self": 35,
+                                  "value": "Percent: 13.0% Predict: 0.362",
+                                  "sample": 129,
+                                  "posneg": 362
+                                },
+                                {
+                                  "name": "Housewife",
+                                  "parent": 27,
+                                  "self": 36,
+                                  "value": "Percent: 0.9% Predict: 0.53",
+                                  "sample": 8,
+                                  "posneg": 530
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Age > 65",
+                              "parent": 21,
+                              "self": 28,
+                              "value": "Percent: 0.4% Predict: 0.0",
+                              "sample": 3,
+                              "posneg": 0
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Income > 42%",
+                          "parent": 11,
+                          "self": 22,
+                          "value": "Percent: 0.7% Predict: 0.087",
+                          "sample": 6,
+                          "posneg": 87
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Married",
+                      "parent": 8,
+                      "self": 12,
+                      "value": "Percent: 28.3% Predict: 0.272",
+                      "sample": 283,
+                      "posneg": 272,
+                      "children": [
+                        {
+                          "name": "Age <= 34",
+                          "parent": 12,
+                          "self": 15,
+                          "value": "Percent: 5.8% Predict: 0.351",
+                          "sample": 57,
+                          "posneg": 350,
+                          "children": [
+                            {
+                              "name": "Income <= 11%",
+                              "parent": 15,
+                              "self": 17,
+                              "value": "Percent: 0.6% Predict: 0.554",
+                              "sample": 6,
+                              "posneg": 554
+                            },
+                            {
+                              "name": "Income > 11%",
+                              "parent": 15,
+                              "self": 18,
+                              "value": "Percent: 5.2% Predict: 0.313",
+                              "sample": 51,
+                              "posneg": 312
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 34",
+                          "parent": 12,
+                          "self": 16,
+                          "value": "Percent: 22.5% Predict: 0.249",
+                          "sample": 225,
+                          "posneg": 249,
+                          "children": [
+                            {
+                              "name": "Age <= 65",
+                              "parent": 16,
+                              "self": 31,
+                              "value": "Percent: 21.7% Predict: 0.256",
+                              "sample": 217,
+                              "posneg": 256,
+                              "children": [
+                                {
+                                  "name": "Age <= 60",
+                                  "parent": 31,
+                                  "self": 33,
+                                  "value": "Percent: 20.4% Predict: 0.243",
+                                  "sample": 204,
+                                  "posneg": 243
+                                },
+                                {
+                                  "name": "Age > 60",
+                                  "parent": 31,
+                                  "self": 34,
+                                  "value": "Percent: 1.3% Predict: 0.413",
+                                  "sample": 12,
+                                  "posneg": 413
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Age > 65",
+                              "parent": 16,
+                              "self": 32,
+                              "value": "Percent: 0.8% Predict: 0.0",
+                              "sample": 7,
+                              "posneg": 0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Income > 47%",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 31.6% Predict: 0.164",
+              "sample": 315,
+              "posneg": 163,
+              "children": [
+                {
+                  "name": "Age <= 33",
+                  "parent": 4,
+                  "self": 5,
+                  "value": "Percent: 6.8% Predict: 0.297",
+                  "sample": 67,
+                  "posneg": 296,
+                  "children": [
+                    {
+                      "name": "Age <= 17",
+                      "parent": 5,
+                      "self": 19,
+                      "value": "Percent: 0.3% Predict: 0.603",
+                      "sample": 2,
+                      "posneg": 602
+                    },
+                    {
+                      "name": "Age > 17",
+                      "parent": 5,
+                      "self": 20,
+                      "value": "Percent: 6.5% Predict: 0.275",
+                      "sample": 65,
+                      "posneg": 274,
+                      "children": [
+                        {
+                          "name": "Income <= 55%",
+                          "parent": 20,
+                          "self": 25,
+                          "value": "Percent: 2.0% Predict: 0.378",
+                          "sample": 20,
+                          "posneg": 378
+                        },
+                        {
+                          "name": "Income > 55%",
+                          "parent": 20,
+                          "self": 26,
+                          "value": "Percent: 4.5% Predict: 0.215",
+                          "sample": 45,
+                          "posneg": 215
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 33",
+                  "parent": 4,
+                  "self": 6,
+                  "value": "Percent: 24.8% Predict: 0.118",
+                  "sample": 247,
+                  "posneg": 117
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Perfect Health Solution": {
+      "name": "Perfect Health Solution",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 499,
+      "children": [
+        {
+          "name": "Age <= 40",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 58.3% Predict: 0.606",
+          "sample": 582,
+          "posneg": 606,
+          "children": [
+            {
+              "name": "Income <= 38%",
+              "parent": 1,
+              "self": 3,
+              "value": "Percent: 25.0% Predict: 0.344",
+              "sample": 249,
+              "posneg": 343,
+              "children": [
+                {
+                  "name": "Age <= 30",
+                  "parent": 3,
+                  "self": 11,
+                  "value": "Percent: 13.8% Predict: 0.41",
+                  "sample": 137,
+                  "posneg": 409,
+                  "children": [
+                    {
+                      "name": "Age <= 3",
+                      "parent": 11,
+                      "self": 29,
+                      "value": "Percent: 1.9% Predict: 0.527",
+                      "sample": 18,
+                      "posneg": 526
+                    },
+                    {
+                      "name": "Age > 3",
+                      "parent": 11,
+                      "self": 30,
+                      "value": "Percent: 11.9% Predict: 0.386",
+                      "sample": 118,
+                      "posneg": 385
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 30",
+                  "parent": 3,
+                  "self": 12,
+                  "value": "Percent: 11.2% Predict: 0.242",
+                  "sample": 112,
+                  "posneg": 241
+                }
+              ]
+            },
+            {
+              "name": "Income > 38%",
+              "parent": 1,
+              "self": 4,
+              "value": "Percent: 33.3% Predict: 0.703",
+              "sample": 332,
+              "posneg": 703,
+              "children": [
+                {
+                  "name": "Income <= 66%",
+                  "parent": 4,
+                  "self": 7,
+                  "value": "Percent: 26.6% Predict: 0.62",
+                  "sample": 266,
+                  "posneg": 619,
+                  "children": [
+                    {
+                      "name": "Age <= 34",
+                      "parent": 7,
+                      "self": 9,
+                      "value": "Percent: 20.8% Predict: 0.652",
+                      "sample": 208,
+                      "posneg": 652,
+                      "children": [
+                        {
+                          "name": "Age <= 3",
+                          "parent": 9,
+                          "self": 15,
+                          "value": "Percent: 4.2% Predict: 0.735",
+                          "sample": 41,
+                          "posneg": 735,
+                          "children": [
+                            {
+                              "name": "Not Occupation Unknown",
+                              "parent": 15,
+                              "self": 17,
+                              "value": "Percent: 3.9% Predict: 0.749",
+                              "sample": 39,
+                              "posneg": 748,
+                              "children": [
+                                {
+                                  "name": "Income <= 39%",
+                                  "parent": 17,
+                                  "self": 27,
+                                  "value": "Percent: 2.4% Predict: 0.791",
+                                  "sample": 24,
+                                  "posneg": 791
+                                },
+                                {
+                                  "name": "Income > 39%",
+                                  "parent": 17,
+                                  "self": 28,
+                                  "value": "Percent: 1.5% Predict: 0.639",
+                                  "sample": 14,
+                                  "posneg": 638
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Occupation Unknown",
+                              "parent": 15,
+                              "self": 18,
+                              "value": "Percent: 0.3% Predict: 0.233",
+                              "sample": 2,
+                              "posneg": 233
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 3",
+                          "parent": 9,
+                          "self": 16,
+                          "value": "Percent: 16.6% Predict: 0.624",
+                          "sample": 166,
+                          "posneg": 623,
+                          "children": [
+                            {
+                              "name": "Income <= 55%",
+                              "parent": 16,
+                              "self": 31,
+                              "value": "Percent: 14.4% Predict: 0.606",
+                              "sample": 143,
+                              "posneg": 606
+                            },
+                            {
+                              "name": "Income > 55%",
+                              "parent": 16,
+                              "self": 32,
+                              "value": "Percent: 2.3% Predict: 0.709",
+                              "sample": 22,
+                              "posneg": 709
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Age > 34",
+                      "parent": 7,
+                      "self": 10,
+                      "value": "Percent: 5.8% Predict: 0.442",
+                      "sample": 58,
+                      "posneg": 442
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 66%",
+                  "parent": 4,
+                  "self": 8,
+                  "value": "Percent: 6.7% Predict: 0.855",
+                  "sample": 66,
+                  "posneg": 854,
+                  "children": [
+                    {
+                      "name": "Income <= 76%",
+                      "parent": 8,
+                      "self": 21,
+                      "value": "Percent: 2.4% Predict: 0.775",
+                      "sample": 23,
+                      "posneg": 774
+                    },
+                    {
+                      "name": "Income > 76%",
+                      "parent": 8,
+                      "self": 22,
+                      "value": "Percent: 4.3% Predict: 0.882",
+                      "sample": 42,
+                      "posneg": 882
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Age > 40",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 41.7% Predict: 0.224",
+          "sample": 417,
+          "posneg": 223,
+          "children": [
+            {
+              "name": "Income <= 77%",
+              "parent": 2,
+              "self": 5,
+              "value": "Percent: 37.8% Predict: 0.133",
+              "sample": 377,
+              "posneg": 133,
+              "children": [
+                {
+                  "name": "Age <= 46",
+                  "parent": 5,
+                  "self": 13,
+                  "value": "Percent: 11.2% Predict: 0.219",
+                  "sample": 111,
+                  "posneg": 218,
+                  "children": [
+                    {
+                      "name": "Income <= 56%",
+                      "parent": 13,
+                      "self": 23,
+                      "value": "Percent: 9.2% Predict: 0.181",
+                      "sample": 92,
+                      "posneg": 180,
+                      "children": [
+                        {
+                          "name": "Not Housewife",
+                          "parent": 23,
+                          "self": 25,
+                          "value": "Percent: 8.8% Predict: 0.161",
+                          "sample": 88,
+                          "posneg": 160
+                        },
+                        {
+                          "name": "Housewife",
+                          "parent": 23,
+                          "self": 26,
+                          "value": "Percent: 0.4% Predict: 0.468",
+                          "sample": 4,
+                          "posneg": 468
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 56%",
+                      "parent": 13,
+                      "self": 24,
+                      "value": "Percent: 1.9% Predict: 0.361",
+                      "sample": 19,
+                      "posneg": 360
+                    }
+                  ]
+                },
+                {
+                  "name": "Age > 46",
+                  "parent": 5,
+                  "self": 14,
+                  "value": "Percent: 26.6% Predict: 0.092",
+                  "sample": 266,
+                  "posneg": 92
+                }
+              ]
+            },
+            {
+              "name": "Income > 77%",
+              "parent": 2,
+              "self": 6,
+              "value": "Percent: 4.0% Predict: 0.624",
+              "sample": 39,
+              "posneg": 624,
+              "children": [
+                {
+                  "name": "Income <= 82%",
+                  "parent": 6,
+                  "self": 19,
+                  "value": "Percent: 2.1% Predict: 0.512",
+                  "sample": 21,
+                  "posneg": 511
+                },
+                {
+                  "name": "Income > 82%",
+                  "parent": 6,
+                  "self": 20,
+                  "value": "Percent: 1.8% Predict: 0.707",
+                  "sample": 18,
+                  "posneg": 707
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "i-Wish": {
+      "name": "i-Wish",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 500,
+      "children": [
+        {
+          "name": "Income <= 55%",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 76.3% Predict: 0.313",
+          "sample": 762,
+          "posneg": 312,
+          "children": [
+            {
+              "name": "Age <= 19",
+              "parent": 1,
+              "self": 5,
+              "value": "Percent: 13.9% Predict: 0.0",
+              "sample": 138,
+              "posneg": 0
+            },
+            {
+              "name": "Age > 19",
+              "parent": 1,
+              "self": 6,
+              "value": "Percent: 62.4% Predict: 0.358",
+              "sample": 623,
+              "posneg": 357,
+              "children": [
+                {
+                  "name": "Not White Collar",
+                  "parent": 6,
+                  "self": 9,
+                  "value": "Percent: 26.8% Predict: 0.261",
+                  "sample": 268,
+                  "posneg": 261,
+                  "children": [
+                    {
+                      "name": "Not Occupation Unknown",
+                      "parent": 9,
+                      "self": 15,
+                      "value": "Percent: 22.7% Predict: 0.22",
+                      "sample": 226,
+                      "posneg": 219,
+                      "children": [
+                        {
+                          "name": "Not Heavy Duty",
+                          "parent": 15,
+                          "self": 29,
+                          "value": "Percent: 17.5% Predict: 0.254",
+                          "sample": 175,
+                          "posneg": 254,
+                          "children": [
+                            {
+                              "name": "Age <= 60",
+                              "parent": 29,
+                              "self": 35,
+                              "value": "Percent: 16.0% Predict: 0.272",
+                              "sample": 159,
+                              "posneg": 272,
+                              "children": [
+                                {
+                                  "name": "Not Single",
+                                  "parent": 35,
+                                  "self": 47,
+                                  "value": "Percent: 10.4% Predict: 0.226",
+                                  "sample": 103,
+                                  "posneg": 226
+                                },
+                                {
+                                  "name": "Single",
+                                  "parent": 35,
+                                  "self": 48,
+                                  "value": "Percent: 5.6% Predict: 0.345",
+                                  "sample": 55,
+                                  "posneg": 344,
+                                  "children": [
+                                    {
+                                      "name": "Not Male",
+                                      "parent": 48,
+                                      "self": 49,
+                                      "value": "Percent: 2.9% Predict: 0.422",
+                                      "sample": 29,
+                                      "posneg": 422
+                                    },
+                                    {
+                                      "name": "Male",
+                                      "parent": 48,
+                                      "self": 50,
+                                      "value": "Percent: 2.7% Predict: 0.233",
+                                      "sample": 26,
+                                      "posneg": 232
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Age > 60",
+                              "parent": 29,
+                              "self": 36,
+                              "value": "Percent: 1.6% Predict: 0.0",
+                              "sample": 15,
+                              "posneg": 0
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Heavy Duty",
+                          "parent": 15,
+                          "self": 30,
+                          "value": "Percent: 5.2% Predict: 0.074",
+                          "sample": 51,
+                          "posneg": 74
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Occupation Unknown",
+                      "parent": 9,
+                      "self": 16,
+                      "value": "Percent: 4.1% Predict: 0.429",
+                      "sample": 41,
+                      "posneg": 428,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 16,
+                          "self": 41,
+                          "value": "Percent: 2.7% Predict: 0.332",
+                          "sample": 27,
+                          "posneg": 331
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 16,
+                          "self": 42,
+                          "value": "Percent: 1.4% Predict: 0.555",
+                          "sample": 14,
+                          "posneg": 554
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "White Collar",
+                  "parent": 6,
+                  "self": 10,
+                  "value": "Percent: 35.6% Predict: 0.415",
+                  "sample": 355,
+                  "posneg": 415,
+                  "children": [
+                    {
+                      "name": "Income <= 37%",
+                      "parent": 10,
+                      "self": 13,
+                      "value": "Percent: 22.1% Predict: 0.342",
+                      "sample": 220,
+                      "posneg": 341,
+                      "children": [
+                        {
+                          "name": "Income <= 4%",
+                          "parent": 13,
+                          "self": 23,
+                          "value": "Percent: 1.6% Predict: 0.554",
+                          "sample": 15,
+                          "posneg": 554
+                        },
+                        {
+                          "name": "Income > 4%",
+                          "parent": 13,
+                          "self": 24,
+                          "value": "Percent: 20.5% Predict: 0.316",
+                          "sample": 204,
+                          "posneg": 316,
+                          "children": [
+                            {
+                              "name": "Not Single",
+                              "parent": 24,
+                              "self": 27,
+                              "value": "Percent: 11.8% Predict: 0.244",
+                              "sample": 117,
+                              "posneg": 244
+                            },
+                            {
+                              "name": "Single",
+                              "parent": 24,
+                              "self": 28,
+                              "value": "Percent: 8.7% Predict: 0.395",
+                              "sample": 87,
+                              "posneg": 394
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 37%",
+                      "parent": 10,
+                      "self": 14,
+                      "value": "Percent: 13.5% Predict: 0.507",
+                      "sample": 135,
+                      "posneg": 506,
+                      "children": [
+                        {
+                          "name": "Income <= 39%",
+                          "parent": 14,
+                          "self": 19,
+                          "value": "Percent: 2.1% Predict: 0.663",
+                          "sample": 21,
+                          "posneg": 662
+                        },
+                        {
+                          "name": "Income > 39%",
+                          "parent": 14,
+                          "self": 20,
+                          "value": "Percent: 11.4% Predict: 0.461",
+                          "sample": 113,
+                          "posneg": 460,
+                          "children": [
+                            {
+                              "name": "Income <= 42%",
+                              "parent": 20,
+                              "self": 31,
+                              "value": "Percent: 4.3% Predict: 0.341",
+                              "sample": 42,
+                              "posneg": 341
+                            },
+                            {
+                              "name": "Income > 42%",
+                              "parent": 20,
+                              "self": 32,
+                              "value": "Percent: 7.1% Predict: 0.514",
+                              "sample": 71,
+                              "posneg": 514,
+                              "children": [
+                                {
+                                  "name": "Not Single",
+                                  "parent": 32,
+                                  "self": 39,
+                                  "value": "Percent: 5.1% Predict: 0.456",
+                                  "sample": 50,
+                                  "posneg": 455
+                                },
+                                {
+                                  "name": "Single",
+                                  "parent": 32,
+                                  "self": 40,
+                                  "value": "Percent: 2.0% Predict: 0.618",
+                                  "sample": 20,
+                                  "posneg": 618
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Income > 55%",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 23.7% Predict: 0.737",
+          "sample": 237,
+          "posneg": 737,
+          "children": [
+            {
+              "name": "Age <= 24",
+              "parent": 2,
+              "self": 3,
+              "value": "Percent: 3.4% Predict: 0.096",
+              "sample": 34,
+              "posneg": 96,
+              "children": [
+                {
+                  "name": "Age <= 20",
+                  "parent": 3,
+                  "self": 37,
+                  "value": "Percent: 2.8% Predict: 0.0",
+                  "sample": 28,
+                  "posneg": 0
+                },
+                {
+                  "name": "Age > 20",
+                  "parent": 3,
+                  "self": 38,
+                  "value": "Percent: 0.6% Predict: 0.372",
+                  "sample": 6,
+                  "posneg": 372
+                }
+              ]
+            },
+            {
+              "name": "Age > 24",
+              "parent": 2,
+              "self": 4,
+              "value": "Percent: 20.3% Predict: 0.767",
+              "sample": 202,
+              "posneg": 766,
+              "children": [
+                {
+                  "name": "Not White Collar",
+                  "parent": 4,
+                  "self": 7,
+                  "value": "Percent: 7.5% Predict: 0.561",
+                  "sample": 74,
+                  "posneg": 561,
+                  "children": [
+                    {
+                      "name": "Not Single",
+                      "parent": 7,
+                      "self": 21,
+                      "value": "Percent: 6.0% Predict: 0.491",
+                      "sample": 60,
+                      "posneg": 491,
+                      "children": [
+                        {
+                          "name": "Income <= 76%",
+                          "parent": 21,
+                          "self": 25,
+                          "value": "Percent: 3.5% Predict: 0.362",
+                          "sample": 35,
+                          "posneg": 362,
+                          "children": [
+                            {
+                              "name": "Age <= 43",
+                              "parent": 25,
+                              "self": 43,
+                              "value": "Percent: 1.7% Predict: 0.216",
+                              "sample": 16,
+                              "posneg": 216
+                            },
+                            {
+                              "name": "Age > 43",
+                              "parent": 25,
+                              "self": 44,
+                              "value": "Percent: 1.8% Predict: 0.456",
+                              "sample": 18,
+                              "posneg": 456,
+                              "children": [
+                                {
+                                  "name": "Age <= 54",
+                                  "parent": 44,
+                                  "self": 45,
+                                  "value": "Percent: 1.2% Predict: 0.546",
+                                  "sample": 11,
+                                  "posneg": 546
+                                },
+                                {
+                                  "name": "Age > 54",
+                                  "parent": 44,
+                                  "self": 46,
+                                  "value": "Percent: 0.6% Predict: 0.135",
+                                  "sample": 6,
+                                  "posneg": 134
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Income > 76%",
+                          "parent": 21,
+                          "self": 26,
+                          "value": "Percent: 2.5% Predict: 0.604",
+                          "sample": 25,
+                          "posneg": 604,
+                          "children": [
+                            {
+                              "name": "Age <= 35",
+                              "parent": 26,
+                              "self": 51,
+                              "value": "Percent: 0.6% Predict: 0.337",
+                              "sample": 5,
+                              "posneg": 337
+                            },
+                            {
+                              "name": "Age > 35",
+                              "parent": 26,
+                              "self": 52,
+                              "value": "Percent: 1.9% Predict: 0.648",
+                              "sample": 19,
+                              "posneg": 647,
+                              "children": [
+                                {
+                                  "name": "Age <= 60",
+                                  "parent": 52,
+                                  "self": 53,
+                                  "value": "Percent: 1.7% Predict: 0.671",
+                                  "sample": 17,
+                                  "posneg": 670
+                                },
+                                {
+                                  "name": "Age > 60",
+                                  "parent": 52,
+                                  "self": 54,
+                                  "value": "Percent: 0.2% Predict: 0.0",
+                                  "sample": 1,
+                                  "posneg": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Single",
+                      "parent": 7,
+                      "self": 22,
+                      "value": "Percent: 1.4% Predict: 0.724",
+                      "sample": 14,
+                      "posneg": 723
+                    }
+                  ]
+                },
+                {
+                  "name": "White Collar",
+                  "parent": 4,
+                  "self": 8,
+                  "value": "Percent: 12.8% Predict: 0.818",
+                  "sample": 128,
+                  "posneg": 818,
+                  "children": [
+                    {
+                      "name": "Income <= 66%",
+                      "parent": 8,
+                      "self": 11,
+                      "value": "Percent: 6.1% Predict: 0.686",
+                      "sample": 60,
+                      "posneg": 685,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 11,
+                          "self": 33,
+                          "value": "Percent: 4.7% Predict: 0.625",
+                          "sample": 46,
+                          "posneg": 624
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 11,
+                          "self": 34,
+                          "value": "Percent: 1.4% Predict: 0.8",
+                          "sample": 13,
+                          "posneg": 800
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 66%",
+                      "parent": 8,
+                      "self": 12,
+                      "value": "Percent: 6.8% Predict: 0.87",
+                      "sample": 67,
+                      "posneg": 870,
+                      "children": [
+                        {
+                          "name": "Age <= 60",
+                          "parent": 12,
+                          "self": 17,
+                          "value": "Percent: 6.5% Predict: 0.876",
+                          "sample": 64,
+                          "posneg": 875,
+                          "children": [
+                            {
+                              "name": "Income <= 72%",
+                              "parent": 17,
+                              "self": 55,
+                              "value": "Percent: 2.1% Predict: 0.804",
+                              "sample": 20,
+                              "posneg": 804
+                            },
+                            {
+                              "name": "Income > 72%",
+                              "parent": 17,
+                              "self": 56,
+                              "value": "Percent: 4.4% Predict: 0.895",
+                              "sample": 43,
+                              "posneg": 895
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Age > 60",
+                          "parent": 12,
+                          "self": 18,
+                          "value": "Percent: 0.3% Predict: 0.0",
+                          "sample": 3,
+                          "posneg": 0
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Easy cash": {
+      "name": "Easy cash",
+      "parent": "null",
+      "self": 0,
+      "value": "Percent: 100.0% Predict: 0.5",
+      "sample": 1000,
+      "posneg": 499,
+      "children": [
+        {
+          "name": "Age <= 46",
+          "parent": 0,
+          "self": 1,
+          "value": "Percent: 70.7% Predict: 0.354",
+          "sample": 706,
+          "posneg": 353,
+          "children": [
+            {
+              "name": "Income <= 47%",
+              "parent": 1,
+              "self": 3,
+              "value": "Percent: 50.4% Predict: 0.284",
+              "sample": 503,
+              "posneg": 284,
+              "children": [
+                {
+                  "name": "Age <= 7",
+                  "parent": 3,
+                  "self": 13,
+                  "value": "Percent: 7.5% Predict: 0.142",
+                  "sample": 75,
+                  "posneg": 141
+                },
+                {
+                  "name": "Age > 7",
+                  "parent": 3,
+                  "self": 14,
+                  "value": "Percent: 42.9% Predict: 0.305",
+                  "sample": 428,
+                  "posneg": 304,
+                  "children": [
+                    {
+                      "name": "Income <= 37%",
+                      "parent": 14,
+                      "self": 17,
+                      "value": "Percent: 24.3% Predict: 0.257",
+                      "sample": 242,
+                      "posneg": 256,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 17,
+                          "self": 27,
+                          "value": "Percent: 12.5% Predict: 0.214",
+                          "sample": 125,
+                          "posneg": 213
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 17,
+                          "self": 28,
+                          "value": "Percent: 11.8% Predict: 0.298",
+                          "sample": 117,
+                          "posneg": 298,
+                          "children": [
+                            {
+                              "name": "Age <= 20",
+                              "parent": 28,
+                              "self": 29,
+                              "value": "Percent: 1.5% Predict: 0.106",
+                              "sample": 14,
+                              "posneg": 105
+                            },
+                            {
+                              "name": "Age > 20",
+                              "parent": 28,
+                              "self": 30,
+                              "value": "Percent: 10.3% Predict: 0.32",
+                              "sample": 102,
+                              "posneg": 320
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Income > 37%",
+                      "parent": 14,
+                      "self": 18,
+                      "value": "Percent: 18.6% Predict: 0.359",
+                      "sample": 185,
+                      "posneg": 358,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 18,
+                          "self": 35,
+                          "value": "Percent: 8.5% Predict: 0.311",
+                          "sample": 84,
+                          "posneg": 311
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 18,
+                          "self": 36,
+                          "value": "Percent: 10.1% Predict: 0.394",
+                          "sample": 101,
+                          "posneg": 394,
+                          "children": [
+                            {
+                              "name": "Not Housewife",
+                              "parent": 36,
+                              "self": 37,
+                              "value": "Percent: 6.1% Predict: 0.451",
+                              "sample": 60,
+                              "posneg": 451,
+                              "children": [
+                                {
+                                  "name": "Age <= 22",
+                                  "parent": 37,
+                                  "self": 47,
+                                  "value": "Percent: 1.4% Predict: 0.342",
+                                  "sample": 13,
+                                  "posneg": 341
+                                },
+                                {
+                                  "name": "Age > 22",
+                                  "parent": 37,
+                                  "self": 48,
+                                  "value": "Percent: 4.7% Predict: 0.477",
+                                  "sample": 47,
+                                  "posneg": 477
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Housewife",
+                              "parent": 36,
+                              "self": 38,
+                              "value": "Percent: 4.0% Predict: 0.284",
+                              "sample": 40,
+                              "posneg": 284
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Income > 47%",
+              "parent": 1,
+              "self": 4,
+              "value": "Percent: 20.3% Predict: 0.482",
+              "sample": 202,
+              "posneg": 482,
+              "children": [
+                {
+                  "name": "Age <= 21",
+                  "parent": 4,
+                  "self": 7,
+                  "value": "Percent: 4.4% Predict: 0.249",
+                  "sample": 43,
+                  "posneg": 248
+                },
+                {
+                  "name": "Age > 21",
+                  "parent": 4,
+                  "self": 8,
+                  "value": "Percent: 15.9% Predict: 0.525",
+                  "sample": 159,
+                  "posneg": 524,
+                  "children": [
+                    {
+                      "name": "Not Single",
+                      "parent": 8,
+                      "self": 15,
+                      "value": "Percent: 10.9% Predict: 0.466",
+                      "sample": 108,
+                      "posneg": 466,
+                      "children": [
+                        {
+                          "name": "Income <= 76%",
+                          "parent": 15,
+                          "self": 23,
+                          "value": "Percent: 7.7% Predict: 0.425",
+                          "sample": 77,
+                          "posneg": 425,
+                          "children": [
+                            {
+                              "name": "Not White Collar",
+                              "parent": 23,
+                              "self": 39,
+                              "value": "Percent: 3.7% Predict: 0.364",
+                              "sample": 37,
+                              "posneg": 364
+                            },
+                            {
+                              "name": "White Collar",
+                              "parent": 23,
+                              "self": 40,
+                              "value": "Percent: 4.0% Predict: 0.473",
+                              "sample": 40,
+                              "posneg": 472,
+                              "children": [
+                                {
+                                  "name": "Income <= 59%",
+                                  "parent": 40,
+                                  "self": 53,
+                                  "value": "Percent: 1.9% Predict: 0.403",
+                                  "sample": 19,
+                                  "posneg": 402
+                                },
+                                {
+                                  "name": "Income > 59%",
+                                  "parent": 40,
+                                  "self": 54,
+                                  "value": "Percent: 2.1% Predict: 0.526",
+                                  "sample": 20,
+                                  "posneg": 526
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Income > 76%",
+                          "parent": 15,
+                          "self": 24,
+                          "value": "Percent: 3.2% Predict: 0.546",
+                          "sample": 31,
+                          "posneg": 546,
+                          "children": [
+                            {
+                              "name": "Age <= 40",
+                              "parent": 24,
+                              "self": 41,
+                              "value": "Percent: 2.1% Predict: 0.488",
+                              "sample": 20,
+                              "posneg": 487
+                            },
+                            {
+                              "name": "Age > 40",
+                              "parent": 24,
+                              "self": 42,
+                              "value": "Percent: 1.1% Predict: 0.633",
+                              "sample": 10,
+                              "posneg": 632
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Single",
+                      "parent": 8,
+                      "self": 16,
+                      "value": "Percent: 5.0% Predict: 0.619",
+                      "sample": 50,
+                      "posneg": 619,
+                      "children": [
+                        {
+                          "name": "Not White Collar",
+                          "parent": 16,
+                          "self": 45,
+                          "value": "Percent: 1.9% Predict: 0.547",
+                          "sample": 19,
+                          "posneg": 547
+                        },
+                        {
+                          "name": "White Collar",
+                          "parent": 16,
+                          "self": 46,
+                          "value": "Percent: 3.1% Predict: 0.654",
+                          "sample": 31,
+                          "posneg": 653
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Age > 46",
+          "parent": 0,
+          "self": 2,
+          "value": "Percent: 29.3% Predict: 0.686",
+          "sample": 293,
+          "posneg": 686,
+          "children": [
+            {
+              "name": "Income <= 72%",
+              "parent": 2,
+              "self": 5,
+              "value": "Percent: 26.0% Predict: 0.645",
+              "sample": 260,
+              "posneg": 645,
+              "children": [
+                {
+                  "name": "Income <= 36%",
+                  "parent": 5,
+                  "self": 9,
+                  "value": "Percent: 7.7% Predict: 0.514",
+                  "sample": 77,
+                  "posneg": 514,
+                  "children": [
+                    {
+                      "name": "Age <= 53",
+                      "parent": 9,
+                      "self": 19,
+                      "value": "Percent: 3.7% Predict: 0.406",
+                      "sample": 37,
+                      "posneg": 405,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 19,
+                          "self": 51,
+                          "value": "Percent: 3.0% Predict: 0.369",
+                          "sample": 30,
+                          "posneg": 368
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 19,
+                          "self": 52,
+                          "value": "Percent: 0.7% Predict: 0.529",
+                          "sample": 7,
+                          "posneg": 529
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Age > 53",
+                      "parent": 9,
+                      "self": 20,
+                      "value": "Percent: 4.0% Predict: 0.588",
+                      "sample": 39,
+                      "posneg": 587,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 20,
+                          "self": 33,
+                          "value": "Percent: 3.4% Predict: 0.548",
+                          "sample": 34,
+                          "posneg": 547
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 20,
+                          "self": 34,
+                          "value": "Percent: 0.6% Predict: 0.739",
+                          "sample": 5,
+                          "posneg": 738
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Income > 36%",
+                  "parent": 5,
+                  "self": 10,
+                  "value": "Percent: 18.3% Predict: 0.684",
+                  "sample": 182,
+                  "posneg": 683,
+                  "children": [
+                    {
+                      "name": "Age <= 59",
+                      "parent": 10,
+                      "self": 11,
+                      "value": "Percent: 15.2% Predict: 0.642",
+                      "sample": 152,
+                      "posneg": 641,
+                      "children": [
+                        {
+                          "name": "Not Single",
+                          "parent": 11,
+                          "self": 21,
+                          "value": "Percent: 12.7% Predict: 0.618",
+                          "sample": 126,
+                          "posneg": 617,
+                          "children": [
+                            {
+                              "name": "Age <= 49",
+                              "parent": 21,
+                              "self": 25,
+                              "value": "Percent: 2.6% Predict: 0.52",
+                              "sample": 26,
+                              "posneg": 520
+                            },
+                            {
+                              "name": "Age > 49",
+                              "parent": 21,
+                              "self": 26,
+                              "value": "Percent: 10.0% Predict: 0.638",
+                              "sample": 100,
+                              "posneg": 637,
+                              "children": [
+                                {
+                                  "name": "Income <= 66%",
+                                  "parent": 26,
+                                  "self": 43,
+                                  "value": "Percent: 8.4% Predict: 0.62",
+                                  "sample": 83,
+                                  "posneg": 620
+                                },
+                                {
+                                  "name": "Income > 66%",
+                                  "parent": 26,
+                                  "self": 44,
+                                  "value": "Percent: 1.6% Predict: 0.71",
+                                  "sample": 16,
+                                  "posneg": 709
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Single",
+                          "parent": 11,
+                          "self": 22,
+                          "value": "Percent: 2.6% Predict: 0.729",
+                          "sample": 25,
+                          "posneg": 729,
+                          "children": [
+                            {
+                              "name": "Not Housewife",
+                              "parent": 22,
+                              "self": 49,
+                              "value": "Percent: 2.3% Predict: 0.744",
+                              "sample": 23,
+                              "posneg": 743
+                            },
+                            {
+                              "name": "Housewife",
+                              "parent": 22,
+                              "self": 50,
+                              "value": "Percent: 0.3% Predict: 0.491",
+                              "sample": 2,
+                              "posneg": 490
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Age > 59",
+                      "parent": 10,
+                      "self": 12,
+                      "value": "Percent: 3.0% Predict: 0.809",
+                      "sample": 30,
+                      "posneg": 808
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Income > 72%",
+              "parent": 2,
+              "self": 6,
+              "value": "Percent: 3.3% Predict: 0.849",
+              "sample": 33,
+              "posneg": 848,
+              "children": [
+                {
+                  "name": "Age <= 50",
+                  "parent": 6,
+                  "self": 31,
+                  "value": "Percent: 0.9% Predict: 0.723",
+                  "sample": 9,
+                  "posneg": 723
+                },
+                {
+                  "name": "Age > 50",
+                  "parent": 6,
+                  "self": 32,
+                  "value": "Percent: 2.4% Predict: 0.876",
+                  "sample": 23,
+                  "posneg": 875
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
